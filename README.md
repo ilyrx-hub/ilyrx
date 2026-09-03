@@ -1,16 +1,19 @@
-# IlyrX Website
+# IlyrX Digital Hub
 
-A modern responsive gaming / downloads / tools starter website built with plain HTML, CSS and JavaScript.
+IlyrX is a personal, non-commercial website focused on software development, browser utilities, gaming resources and useful web resources.
 
-## Files
-- `index.html` — main page
-- `style.css` — design and responsive layout
-- `script.js` — menu, search, password generator, counter and calculator
+## Included
+- Responsive landing page
+- Software and gaming resource sections
+- Password generator with copy button
+- Word, character and line counter
+- Browser calculator with keypad
+- Developer resource links
+- GitHub project/contact section
+- GitHub Pages compatible static files
+
+## Run locally
+Open `index.html` in a browser. No build step or server is required.
 
 ## GitHub Pages
-Upload these files to a GitHub repository and enable **Settings → Pages → Deploy from a branch → main → / (root)**.
-
-Then the site can be connected to `ilyrx.is-a.dev` through the is-a.dev registration process.
-
-## Important
-The download cards are demo placeholders. Replace them with links to the **official websites/download pages** of the software you choose.
+Publish the repository root from the `main` branch. The project is static HTML/CSS/JavaScript and includes `.nojekyll`.
