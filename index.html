@@ -1,132 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="IlyrX — gaming, downloads, software and useful internet tools.">
-  <title>IlyrX — Gaming & Digital Hub</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="IlyrX - software, gaming tools, downloads and useful resources">
+<title>IlyrX — Digital Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <header class="header">
-    <a class="logo" href="#home"><span>Ilyr</span>X</a>
-    <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#games">Games</a>
-      <a href="#downloads">Downloads</a>
-      <a href="#tools">Tools</a>
-      <a href="#about">About</a>
-    </nav>
-    <button class="menu" id="menu" aria-label="Open menu">☰</button>
-  </header>
+<header><div class="nav wrap">
+<a class="logo" href="#home"><b>IX</b> Ilyr<span>X</span></a>
+<nav id="nav"><a href="#home">Home</a><a href="#software">Software</a><a href="#games">Games</a><a href="#downloads">Downloads</a><a href="#tools">Tools</a><a href="#news">News</a><a href="#contact">Contact</a></nav>
+<div class="actions"><button id="theme" title="Theme">☼</button><button id="menu" title="Menu">☰</button></div>
+</div></header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <div class="badge">⚡ ILYRX DIGITAL HUB</div>
-        <h1>Everything you need.<br><span>In one place.</span></h1>
-        <p>Gaming, downloads, software and useful online tools — fast, clean and easy to use.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#downloads">Explore Downloads</a>
-          <a class="btn secondary" href="#tools">Open Tools</a>
-        </div>
-        <div class="stats">
-          <div><strong>24/7</strong><small>Online</small></div>
-          <div><strong>Fast</strong><small>Downloads</small></div>
-          <div><strong>Free</strong><small>Tools</small></div>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="orb"></div>
-        <div class="floating f1">🎮</div>
-        <div class="floating f2">⚡</div>
-        <div class="floating f3">💻</div>
-        <div class="hero-logo">I<span>X</span></div>
-        <p>YOUR DIGITAL HUB</p>
-      </div>
-    </section>
+<main id="home">
+<section class="hero wrap">
+<div><label>● ILYRX DIGITAL HUB</label><h1>Tools, software & <em>gaming resources.</em></h1>
+<p>Discover useful software, gaming tools, downloads and resources in one clean, fast and modern place.</p>
+<div class="buttons"><a class="btn main" href="#downloads">Explore downloads →</a><a class="btn" href="#tools">View tools</a></div>
+<div class="stats"><div><strong>100%</strong><small>Free resources</small></div><div><strong>24/7</strong><small>Available online</small></div><div><strong>Fast</strong><small>Lightweight site</small></div></div></div>
+<div class="hero-card"><div class="bar"><i></i><i></i><i></i><b>IlyrX Hub</b></div><div class="terminal">
+<p><span class="pink">ilyrx@hub</span>:~$ search --all</p><p class="muted">Searching software, tools and games...</p>
+<div class="result">✓ <span><b>Software</b><small>Useful apps & utilities</small></span>→</div>
+<div class="result">✓ <span><b>Gaming</b><small>Tools & resources</small></span>→</div>
+<div class="result">✓ <span><b>Downloads</b><small>Files & resources</small></span>→</div>
+<p class="pink">ilyrx@hub:~$ <blink>_</blink></p></div></div>
+</section>
 
-    <section class="section" id="games">
-      <div class="section-head">
-        <div><span class="eyebrow">PLAY</span><h2>Gaming Zone</h2></div>
-        <p>Quick access to your favorite gaming categories.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="icon">🎯</div><h3>FPS Games</h3><p>Counter-Strike, Valorant and more.</p><a href="#downloads">Explore →</a>
-        </article>
-        <article class="card">
-          <div class="icon">🏎️</div><h3>Racing</h3><p>Racing games, mods and useful tools.</p><a href="#downloads">Explore →</a>
-        </article>
-        <article class="card">
-          <div class="icon">🧩</div><h3>Mods & Add-ons</h3><p>Organized resources for your games.</p><a href="#downloads">Explore →</a>
-        </article>
-        <article class="card">
-          <div class="icon">🖥️</div><h3>Gaming Tools</h3><p>Utilities for players and creators.</p><a href="#tools">Open →</a>
-        </article>
-      </div>
-    </section>
+<section class="section wrap" id="software"><div class="head"><div><label>SOFTWARE</label><h2>Useful software</h2></div><p>Clean categories and quick access to your favorite resources.</p></div>
+<div class="grid3"><article><b class="ico">⚙</b><h3>Utilities</h3><p>Small tools that make everyday PC tasks easier.</p><a href="#downloads">Explore →</a></article>
+<article><b class="ico">‹/›</b><h3>Development</h3><p>Resources for coding, web development and creators.</p><a href="#downloads">Explore →</a></article>
+<article><b class="ico">✓</b><h3>Security</h3><p>Helpful security-focused resources and information.</p><a href="#downloads">Explore →</a></article></div></section>
 
-    <section class="section alt" id="downloads">
-      <div class="section-head">
-        <div><span class="eyebrow">DOWNLOAD</span><h2>Popular Downloads</h2></div>
-        <div class="search"><input id="search" type="search" placeholder="Search downloads..."> 🔎</div>
-      </div>
-      <div class="download-grid" id="downloadGrid">
-        <article class="download" data-name="discord">
-          <div class="download-icon">💬</div><div><h3>Discord</h3><p>Communication for gaming communities.</p></div><span class="tag">APP</span><button>View</button>
-        </article>
-        <article class="download" data-name="steam">
-          <div class="download-icon">🎮</div><div><h3>Steam</h3><p>Digital game library and community.</p></div><span class="tag">GAME</span><button>View</button>
-        </article>
-        <article class="download" data-name="obs studio">
-          <div class="download-icon">📹</div><div><h3>OBS Studio</h3><p>Recording and live streaming software.</p></div><span class="tag">TOOLS</span><button>View</button>
-        </article>
-        <article class="download" data-name="7zip">
-          <div class="download-icon">📦</div><div><h3>7-Zip</h3><p>Fast open-source file archiver.</p></div><span class="tag">UTILITY</span><button>View</button>
-        </article>
-      </div>
-      <p class="note">Demo entries are placeholders. Replace the buttons with your own official download links before publishing.</p>
-    </section>
+<section class="section dark" id="games"><div class="wrap"><div class="head"><div><label>GAMING</label><h2>Gaming zone</h2></div><p>Resources for players and gaming communities.</p></div>
+<div class="grid3"><article><b class="big">🎮</b><h3>Gaming Tools</h3><p>Performance, configuration and helper resources for gamers.</p></article>
+<article class="featured"><small>POPULAR</small><b class="big">⚡</b><h3>Performance</h3><p>Tips and lightweight tools to keep your gaming setup responsive.</p></article>
+<article><b class="big">🛠</b><h3>Configs</h3><p>Organize useful configuration files and community resources.</p></article></div></div></section>
 
-    <section class="section" id="tools">
-      <div class="section-head">
-        <div><span class="eyebrow">UTILITIES</span><h2>Online Tools</h2></div>
-        <p>Small utilities built directly into IlyrX.</p>
-      </div>
-      <div class="tools-grid">
-        <div class="tool">
-          <h3>🔐 Password Generator</h3><p>Generate a strong random password.</p>
-          <div class="tool-row"><input id="password" readonly value="Click Generate"><button class="btn primary small" id="generate">Generate</button></div>
-        </div>
-        <div class="tool">
-          <h3>🔢 Word & Character Counter</h3><p>Count words and characters instantly.</p>
-          <textarea id="counter" placeholder="Write or paste text here..."></textarea>
-          <div class="counter"><span id="words">0 words</span><span id="chars">0 characters</span></div>
-        </div>
-        <div class="tool">
-          <h3>🧮 Quick Calculator</h3><p>Simple calculations without leaving the site.</p>
-          <div class="calc"><input id="calcInput" placeholder="12 * 5 + 2"><button id="calcBtn">=</button></div>
-          <div id="calcResult" class="result">Result: —</div>
-        </div>
-      </div>
-    </section>
+<section class="section wrap" id="downloads"><div class="head"><div><label>DOWNLOADS</label><h2>Downloads</h2></div><p>Search and filter your resources.</p></div>
+<div class="toolbar"><input id="search" placeholder="Search downloads, software, tools..."><select id="filter"><option value="all">All categories</option><option value="software">Software</option><option value="gaming">Gaming</option><option value="tools">Tools</option></select></div>
+<div id="downloadsList" class="downloads">
+<article data-cat="software" data-search="ilyrx website html css javascript"><strong>HTML</strong><span><b>IlyrX Website</b><small>Starter website package • HTML/CSS/JS</small></span><i>v1.0</i><a href="#" data-msg="Add your real download link here">Download</a></article>
+<article data-cat="gaming" data-search="gaming resource pack config"><strong>GAME</strong><span><b>Gaming Resource Pack</b><small>Useful gaming resources and configuration files</small></span><i>FREE</i><a href="#" data-msg="Add your real download link here">Download</a></article>
+<article data-cat="tools" data-search="password calculator tools"><strong>TOOL</strong><span><b>IlyrX Tools</b><small>Password generator, calculator and utilities</small></span><i>v1.0</i><a href="#" data-msg="Add your real download link here">Download</a></article>
+</div><p id="none" class="none">No results found.</p></section>
 
-    <section class="cta" id="about">
-      <div><span class="eyebrow">WELCOME TO ILYRX</span><h2>Built for gamers.<br>Made for the web.</h2><p>This starter site is ready for GitHub Pages and your <b>ilyrx.is-a.dev</b> domain.</p></div>
-      <a class="btn primary" href="#home">Back to top ↑</a>
-    </section>
-  </main>
+<section class="section dark" id="tools"><div class="wrap"><div class="head"><div><label>TOOLS</label><h2>Quick tools</h2></div><p>Simple browser tools — no installation required.</p></div>
+<div class="tools"><article><h3>🔐 Password Generator</h3><p>Generate a strong random password.</p><div class="row"><input id="pass" readonly value="Click Generate"><button class="btn main" id="gen">Generate</button></div></article>
+<article><h3>🧮 Calculator</h3><p>Quick calculations in your browser.</p><input id="calc" class="calc" readonly value="0"><div id="keys" class="keys"></div></article>
+<article><h3>🔢 Character Counter</h3><p>Count characters and words instantly.</p><textarea id="counter" placeholder="Type or paste text..."></textarea><div class="counter"><span id="chars">0 characters</span><span id="words">0 words</span></div></article></div></div></section>
 
-  <footer>
-    <div class="logo"><span>Ilyr</span>X</div>
-    <p>© <span id="year"></span> IlyrX. All rights reserved.</p>
-    <div><a href="#home">Home</a><a href="#about">About</a></div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="section wrap" id="news"><div class="head"><div><label>NEWS</label><h2>Latest updates</h2></div></div>
+<div class="news"><article><label>UPDATE</label><h3>Welcome to the new IlyrX Hub</h3><p>A modern home for software, gaming tools, downloads and useful resources.</p><small>September 2026</small></article>
+<article><label>COMING SOON</label><h3>More tools & downloads</h3><p>Expand this section with your own files, projects and community resources.</p><small>Coming soon</small></article></div></section>
+
+<section class="section wrap" id="contact"><div class="contact"><div><label>CONTACT</label><h2>Have a project or resource?</h2><p>Add your Discord, email or social links here.</p></div><a class="btn main" href="mailto:contact@ilyrx.is-a.dev">Contact IlyrX →</a></div></section>
+</main>
+<footer><div class="wrap"><a class="logo" href="#home"><b>IX</b> Ilyr<span>X</span></a><small>© 2026 IlyrX. Built with HTML, CSS & JavaScript.</small><a href="#home">Back to top ↑</a></div></footer>
+<div id="toast"></div><script src="script.js"></script>
+</body></html>
