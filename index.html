@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IlyrX — gaming, downloads, software and useful internet tools.">
+  <title>IlyrX — Gaming & Digital Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="header">
+    <a class="logo" href="#home"><span>Ilyr</span>X</a>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#downloads">Downloads</a>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="menu" id="menu" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="badge">⚡ ILYRX DIGITAL HUB</div>
+        <h1>Everything you need.<br><span>In one place.</span></h1>
+        <p>Gaming, downloads, software and useful online tools — fast, clean and easy to use.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#downloads">Explore Downloads</a>
+          <a class="btn secondary" href="#tools">Open Tools</a>
+        </div>
+        <div class="stats">
+          <div><strong>24/7</strong><small>Online</small></div>
+          <div><strong>Fast</strong><small>Downloads</small></div>
+          <div><strong>Free</strong><small>Tools</small></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="orb"></div>
+        <div class="floating f1">🎮</div>
+        <div class="floating f2">⚡</div>
+        <div class="floating f3">💻</div>
+        <div class="hero-logo">I<span>X</span></div>
+        <p>YOUR DIGITAL HUB</p>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-head">
+        <div><span class="eyebrow">PLAY</span><h2>Gaming Zone</h2></div>
+        <p>Quick access to your favorite gaming categories.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🎯</div><h3>FPS Games</h3><p>Counter-Strike, Valorant and more.</p><a href="#downloads">Explore →</a>
+        </article>
+        <article class="card">
+          <div class="icon">🏎️</div><h3>Racing</h3><p>Racing games, mods and useful tools.</p><a href="#downloads">Explore →</a>
+        </article>
+        <article class="card">
+          <div class="icon">🧩</div><h3>Mods & Add-ons</h3><p>Organized resources for your games.</p><a href="#downloads">Explore →</a>
+        </article>
+        <article class="card">
+          <div class="icon">🖥️</div><h3>Gaming Tools</h3><p>Utilities for players and creators.</p><a href="#tools">Open →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="downloads">
+      <div class="section-head">
+        <div><span class="eyebrow">DOWNLOAD</span><h2>Popular Downloads</h2></div>
+        <div class="search"><input id="search" type="search" placeholder="Search downloads..."> 🔎</div>
+      </div>
+      <div class="download-grid" id="downloadGrid">
+        <article class="download" data-name="discord">
+          <div class="download-icon">💬</div><div><h3>Discord</h3><p>Communication for gaming communities.</p></div><span class="tag">APP</span><button>View</button>
+        </article>
+        <article class="download" data-name="steam">
+          <div class="download-icon">🎮</div><div><h3>Steam</h3><p>Digital game library and community.</p></div><span class="tag">GAME</span><button>View</button>
+        </article>
+        <article class="download" data-name="obs studio">
+          <div class="download-icon">📹</div><div><h3>OBS Studio</h3><p>Recording and live streaming software.</p></div><span class="tag">TOOLS</span><button>View</button>
+        </article>
+        <article class="download" data-name="7zip">
+          <div class="download-icon">📦</div><div><h3>7-Zip</h3><p>Fast open-source file archiver.</p></div><span class="tag">UTILITY</span><button>View</button>
+        </article>
+      </div>
+      <p class="note">Demo entries are placeholders. Replace the buttons with your own official download links before publishing.</p>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="section-head">
+        <div><span class="eyebrow">UTILITIES</span><h2>Online Tools</h2></div>
+        <p>Small utilities built directly into IlyrX.</p>
+      </div>
+      <div class="tools-grid">
+        <div class="tool">
+          <h3>🔐 Password Generator</h3><p>Generate a strong random password.</p>
+          <div class="tool-row"><input id="password" readonly value="Click Generate"><button class="btn primary small" id="generate">Generate</button></div>
+        </div>
+        <div class="tool">
+          <h3>🔢 Word & Character Counter</h3><p>Count words and characters instantly.</p>
+          <textarea id="counter" placeholder="Write or paste text here..."></textarea>
+          <div class="counter"><span id="words">0 words</span><span id="chars">0 characters</span></div>
+        </div>
+        <div class="tool">
+          <h3>🧮 Quick Calculator</h3><p>Simple calculations without leaving the site.</p>
+          <div class="calc"><input id="calcInput" placeholder="12 * 5 + 2"><button id="calcBtn">=</button></div>
+          <div id="calcResult" class="result">Result: —</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="about">
+      <div><span class="eyebrow">WELCOME TO ILYRX</span><h2>Built for gamers.<br>Made for the web.</h2><p>This starter site is ready for GitHub Pages and your <b>ilyrx.is-a.dev</b> domain.</p></div>
+      <a class="btn primary" href="#home">Back to top ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span>Ilyr</span>X</div>
+    <p>© <span id="year"></span> IlyrX. All rights reserved.</p>
+    <div><a href="#home">Home</a><a href="#about">About</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
