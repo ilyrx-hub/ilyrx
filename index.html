@@ -1,18 +1,107 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IlyrX Hub — Developer Platform</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><div class="gridbg"></div><header><a class="brand" href="#"><b>IX</b><span>Ilyr<span>X</span><small>HUB</small></span></a><nav><a href="#tools">Tools</a><a href="#hosting">Hosting</a><a href="#downloads">Downloads</a><a href="#community">Community</a></nav><div class="actions"><button id="notify">◉</button><button id="account">Sign in</button></div></header><main><section class="hero"><div><em>● DEVELOPER HUB · ONLINE</em><h1>Build. Ship.<br><span>Level up.</span></h1><p>IlyrX Hub is a personal, non-commercial space for software development, useful tools, downloads, hosting guides and a live community.</p><div class="buttons"><a href="#tools">Explore tools →</a><button id="heroAccount">Create account</button></div><div class="stats"><div><b>24/7</b><small>Online hub</small></div><div><b>LIVE</b><small>Community</small></div><div><b>FREE</b><small>Resources</small></div></div></div><div class="terminal"><div class="bar">● ● ● <span>ilyrx://dashboard</span></div><pre>$ whoami
-ilyrx_developer
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IlyrX — Game Hosting & Developer Hub</title>
+<meta name="description" content="IlyrX game hosting, developer tools, downloads, server monitoring and community.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar"><span>⚡ IlyrX Network</span><span><b class="dot"></b> All systems operational</span><span class="toplinks"><a href="#status">Status</a><a href="#support">Support</a><a href="#community">Discord / Community</a></span></div>
+<header class="nav">
+  <a class="brand" href="#"><span class="logo">IX</span><span>Ilyr<span>X</span><small>HOSTING & DEV</small></span></a>
+  <nav><a href="#games">Game Servers</a><a href="#features">Features</a><a href="#developer">Developer</a><a href="#downloads">Downloads</a><a href="#support">Support</a></nav>
+  <div class="nav-actions"><button class="theme" id="themeBtn">☼</button><button class="login-btn" id="accountBtn">Login</button><button class="primary" id="heroAccount">Get Started</button></div>
+</header>
 
-$ status
-<span>✓ all systems operational</span>
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <div class="eyebrow"><b class="dot"></b> PREMIUM GAME HOSTING • DEVELOPER HUB</div>
+    <h1>Your server.<br><span>Our infrastructure.</span></h1>
+    <p>Launch game servers, manage communities, explore developer tools and keep everything in one clean IlyrX dashboard.</p>
+    <div class="hero-actions"><a class="primary big" href="#games">Explore Games →</a><button class="secondary big" id="heroLogin">Create Account</button></div>
+    <div class="trust"><span>✓ Instant setup</span><span>✓ NVMe infrastructure</span><span>✓ DDoS-ready architecture</span><span>✓ Live support</span></div>
+  </div>
+  <div class="hero-console">
+    <div class="console-head"><span><i></i><i></i><i></i></span><b>ilyrx://network</b><span class="green">● LIVE</span></div>
+    <div class="console-body">
+      <div class="console-title">NETWORK STATUS</div>
+      <div class="network-ok">✓ ALL SYSTEMS OPERATIONAL</div>
+      <div class="metrics"><div><small>CPU LOAD</small><strong>32%</strong></div><div><small>NETWORK</small><strong>1 Gbps</strong></div><div><small>LATENCY</small><strong>14 ms</strong></div><div><small>UPTIME</small><strong>99.9%</strong></div></div>
+      <div class="bars"><span style="width:32%"></span><span style="width:58%"></span><span style="width:72%"></span></div>
+      <div class="console-line">$ ilyrx status --live</div><div class="console-line muted">nodes: 14 • regions: 5 • protection: active</div>
+    </div>
+  </div>
+</section>
 
-Projects      08
-Tools         16+
-Community     LIVE
+<section class="stats"><div><strong>99.9%</strong><span>Target uptime</span></div><div><strong>NVMe</strong><span>Fast storage</span></div><div><strong>24/7</strong><span>Community support</span></div><div><strong>LIVE</strong><span>Monitoring ready</span></div></section>
 
-▋</pre></div></section><section id="tools"><div class="head"><div><i>01 / TOOLKIT</i><h2>Developer tools</h2></div><small>Useful. Fast. No nonsense.</small></div><div class="cards"><article><b>⌘</b><h3>JSON Toolkit</h3><p>Format, validate and inspect JSON in your browser.</p><button data-demo="JSON Toolkit">Open tool</button></article><article><b>⌁</b><h3>Web Utilities</h3><p>Quick helpers for URLs, text and developer workflows.</p><button data-demo="Web Utilities">Open tool</button></article><article><b>&lt;/&gt;</b><h3>Code Resources</h3><p>Snippets, references and starter resources.</p><button data-demo="Code Resources">Browse</button></article><article><b>⚙</b><h3>Project Lab</h3><p>Organize experiments and useful project links.</p><button data-demo="Project Lab">Open lab</button></article></div></section><section id="hosting" class="split"><div class="panel"><i>02 / HOSTING</i><h2>Hosting, domains & deployment</h2><p>Practical notes for static hosting, custom domains, DNS, SSL and Git-based deployments.</p><div class="checks">✓ GitHub Pages　 ✓ Custom domains<br>✓ DNS & SSL　 ✓ Deployment basics</div><button data-demo="Hosting Guide" class="primary">View guide →</button></div><div class="code"><header>deploy.config <span>● LIVE</span></header><pre>site:
-  name: "ilyrx-hub"
-  type: "static"
-  https: true
+<section class="section" id="status">
+  <div class="section-title"><span class="eyebrow">01 / NETWORK</span><h2>Built for communities</h2><p>Everything you need to run a clean, stable gaming community.</p></div>
+  <div class="feature-grid" id="features">
+    <article><div class="fi">🛡</div><h3>DDoS Protection</h3><p>Protected infrastructure and a design ready for game traffic and abuse mitigation.</p></article>
+    <article><div class="fi">▣</div><h3>Control Panel</h3><p>Start, stop, reinstall, configure and organize your server from a modern dashboard.</p></article>
+    <article><div class="fi">↥</div><h3>FTP / Files</h3><p>Upload maps, plugins, mods, scripts and custom content to your projects.</p></article>
+    <article><div class="fi">◉</div><h3>Live Monitoring</h3><p>Track server health, player count, latency and network status from one place.</p></article>
+  </div>
+</section>
 
-domain:
-  provider: "is-a.dev"
-  source: "github-pages"</pre></div></section><section id="downloads"><div class="head"><div><i>03 / DOWNLOADS</i><h2>Resources</h2></div></div><div class="downloads"><article><b>ZIP</b><div><h3>Starter Projects</h3><p>Clean templates and examples.</p></div><button data-demo="Starter Projects">View</button></article><article><b>PDF</b><div><h3>Deployment Notes</h3><p>Hosting, domains and SSL reference.</p></div><button data-demo="Deployment Notes">View</button></article><article><b>DOC</b><div><h3>Developer Cheatsheets</h3><p>Commands and workflow references.</p></div><button data-demo="Developer Cheatsheets">View</button></article></div></section><section id="community"><div class="head"><div><i>04 / COMMUNITY</i><h2>Live chat</h2></div><small id="chatStatus">Sign in to join the room.</small></div><div class="chat"><aside><div class="room active"># <span><b>general</b><small>Developer community</small></span></div><div class="room"># <span><b>projects</b><small>Show your work</small></span></div><div class="room"># <span><b>help</b><small>Ask & answer</small></span></div><div class="online">● Online<br><small>Realtime room</small></div></aside><div class="chatmain"><div id="messages"><div class="empty">Sign in to load the realtime community chat.</div></div><form id="chatForm"><input id="chatInput" maxlength="500" placeholder="Write a message…" disabled><button disabled>Send</button></form></div></div></section></main><footer><b>Ilyr<span>X</span> Hub</b><p>Personal · Non-commercial · Developer focused</p><small>© 2026 IlyrX</small></footer><div class="modal hidden" id="authModal"><div><button class="close" id="closeAuth">×</button><strong>IX</strong><h2 id="authTitle">Welcome back</h2><p id="authSub">Sign in to your IlyrX account.</p><form id="authForm"><label id="nameField" class="hidden">Username<input id="authName" maxlength="40"></label><label>Email<input id="authEmail" type="email" required></label><label>Password<input id="authPassword" type="password" minlength="6" required></label><button class="primary">Sign in</button></form><button id="forgot" class="link">Forgot password?</button><p id="authMsg"></p><div class="switch"><span id="switchText">Don't have an account?</span> <button id="switch" class="link">Create one</button></div></div></div><div class="modal hidden" id="profileModal"><div class="profile"><button class="close" id="closeProfile">×</button><strong id="avatar">I</strong><h2 id="profileName">Account</h2><p id="profileEmail"></p><button id="logout">Sign out</button></div></div><div id="toast"></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script></body></html>
+<section class="section" id="games">
+  <div class="section-title row"><div><span class="eyebrow">02 / GAME SERVERS</span><h2>Choose your game</h2><p>Game cards are ready for real plans and provisioning links.</p></div><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="fps">FPS</button><button class="filter" data-filter="survival">Survival</button><button class="filter" data-filter="sandbox">Sandbox</button></div></div>
+  <div class="game-grid">
+    <article class="game-card" data-cat="fps"><div class="game-art cs">CS</div><div class="game-content"><span>FPS</span><h3>Counter-Strike 1.6</h3><p>Public, Zombie, AWP, DM and community servers.</p><div class="game-bottom"><b>From €4.00/mo</b><button class="small primary" data-game="Counter-Strike 1.6">View Plans</button></div></div></article>
+    <article class="game-card" data-cat="fps"><div class="game-art cs2">CS2</div><div class="game-content"><span>FPS</span><h3>Counter-Strike 2</h3><p>Modern competitive hosting with low-latency architecture.</p><div class="game-bottom"><b>From €5.00/mo</b><button class="small primary" data-game="Counter-Strike 2">View Plans</button></div></div></article>
+    <article class="game-card" data-cat="survival"><div class="game-art rust">RUST</div><div class="game-content"><span>Survival</span><h3>Rust</h3><p>Wipes, mods, Oxide/uMod and community-ready infrastructure.</p><div class="game-bottom"><b>From €11.00/mo</b><button class="small primary" data-game="Rust">View Plans</button></div></div></article>
+    <article class="game-card" data-cat="sandbox"><div class="game-art mc">MC</div><div class="game-content"><span>Sandbox</span><h3>Minecraft</h3><p>Vanilla, Paper, Spigot and modded server workflows.</p><div class="game-bottom"><b>From €8.40/mo</b><button class="small primary" data-game="Minecraft">View Plans</button></div></div></article>
+    <article class="game-card" data-cat="survival"><div class="game-art ark">ARK</div><div class="game-content"><span>Survival</span><h3>ARK</h3><p>Maps, mods, PvE/PvP worlds and cluster-ready setups.</p><div class="game-bottom"><b>From €10.00/mo</b><button class="small primary" data-game="ARK">View Plans</button></div></div></article>
+    <article class="game-card" data-cat="sandbox"><div class="game-art samp">SA</div><div class="game-content"><span>Sandbox</span><h3>SAMP</h3><p>Roleplay, freeroam and custom gamemode communities.</p><div class="game-bottom"><b>From €4.00/mo</b><button class="small primary" data-game="SAMP">View Plans</button></div></div></article>
+    <article class="game-card" data-cat="fps"><div class="game-art tf2">TF2</div><div class="game-content"><span>FPS</span><h3>Team Fortress 2</h3><p>Public servers, custom maps and community events.</p><div class="game-bottom"><b>From €5.00/mo</b><button class="small primary" data-game="Team Fortress 2">View Plans</button></div></div></article>
+    <article class="game-card" data-cat="survival"><div class="game-art l4d">L4D</div><div class="game-content"><span>Co-op</span><h3>Left 4 Dead 2</h3><p>Co-op campaigns, versus and custom server content.</p><div class="game-bottom"><b>From €5.00/mo</b><button class="small primary" data-game="Left 4 Dead 2">View Plans</button></div></article>
+  </div>
+</section>
+
+<section class="section split" id="developer">
+  <div class="developer-panel">
+    <span class="eyebrow">03 / DEVELOPER</span><h2>More than hosting.</h2><p>Give IlyrX a developer side too: utilities, documentation, snippets, deployment notes, downloads and project resources.</p>
+    <div class="dev-list"><span>⌘ JSON / API tools</span><span>⌁ Web utilities</span><span>&lt;/&gt; Code resources</span><span>◈ Deployment guides</span></div>
+    <button class="secondary" data-demo="Developer Hub">Open Developer Hub</button>
+  </div>
+  <div class="code-panel"><div class="code-top">ilyrx.config <span>● READY</span></div><pre><code><b>project</b> = <em>"ilyrx"</em>
+<b>environment</b> = <em>"production"</em>
+<b>deployment</b> = <em>"github-pages"</em>
+<b>database</b> = <em>"supabase"</em>
+<b>realtime</b> = <em>true</em>
+<b>support</b> = <em>"live"</em></code></pre></div>
+</section>
+
+<section class="section" id="downloads">
+ <div class="section-title"><span class="eyebrow">04 / RESOURCES</span><h2>Downloads & tools</h2><p>Organize your utilities, installers, documentation and community files.</p></div>
+ <div class="resource-grid"><article><b>ZIP</b><h3>Starter Projects</h3><p>Clean templates for your next project.</p><button class="small secondary" data-demo="Starter Projects">Open</button></article><article><b>DOC</b><h3>Developer Cheatsheets</h3><p>Quick references for daily workflows.</p><button class="small secondary" data-demo="Developer Cheatsheets">Open</button></article><article><b>API</b><h3>Tools Library</h3><p>Utilities for JSON, URLs, hashes and text.</p><button class="small secondary" data-demo="Tools Library">Open</button></article><article><b>GUIDE</b><h3>Hosting Docs</h3><p>Domains, DNS, SSL and deployment notes.</p><button class="small secondary" data-demo="Hosting Docs">Open</button></article></div>
+</section>
+
+<section class="section account-section" id="support">
+  <div><span class="eyebrow">05 / ACCOUNT & SUPPORT</span><h2>Your IlyrX dashboard</h2><p>Register, manage your profile, view resources and use the realtime community support room.</p><div class="dashboard-pills"><span>🔐 Secure Auth</span><span>🗄 Online Database</span><span>💬 Realtime Chat</span><span>🔔 Notifications</span></div></div>
+  <button class="primary big" id="supportAccount">Open Client Area →</button>
+</section>
+
+<section class="section" id="community">
+ <div class="section-title row"><div><span class="eyebrow">06 / COMMUNITY</span><h2>Realtime support chat</h2><p id="chatStatus">Sign in to join.</p></div><span class="live-pill"><b class="dot"></b> LIVE</span></div>
+ <div class="chat-shell"><aside><div class="room active"># <b>general</b></div><div class="room"># <b>support</b></div><div class="room"># <b>projects</b></div><div class="room-note">Supabase Realtime<br>secure authenticated room</div></aside><div class="chat-main"><div id="messages" class="messages"><div class="empty">Sign in to load realtime chat.</div></div><form id="chatForm"><input id="chatInput" placeholder="Write a message…" maxlength="500" disabled><button class="primary" disabled>Send</button></form></div></div>
+</section>
+</main>
+
+<footer><div><b>Ilyr<span>X</span> HUB</b><p>Game hosting • Developer tools • Community</p></div><div><a href="#games">Games</a><a href="#developer">Developer</a><a href="#downloads">Downloads</a><a href="#support">Support</a></div><span>© 2026 IlyrX</span></footer>
+
+<div class="modal-bg hidden" id="authModal"><div class="modal"><button class="close" id="closeAuth">×</button><div class="modal-logo">IX</div><h2 id="authTitle">Welcome back</h2><p id="authSub">Sign in to your IlyrX account.</p><form id="authForm"><label id="nameWrap" class="hidden">Username<input id="authName" maxlength="40"></label><label>Email<input id="authEmail" type="email" required></label><label>Password<input id="authPassword" type="password" minlength="6" required></label><button class="primary full" id="authSubmit">Sign in</button></form><button class="link-btn" id="forgotBtn">Forgot password?</button><div id="authMessage"></div><div class="switch"> <span id="switchText">Don't have an account?</span> <button class="link-btn" id="switchAuth">Create one</button></div></div></div>
+<div class="modal-bg hidden" id="profileModal"><div class="modal center"><button class="close" id="closeProfile">×</button><div class="avatar" id="profileAvatar">I</div><h2 id="profileName">Account</h2><p id="profileEmail"></p><button class="danger" id="logoutBtn">Sign out</button></div></div>
+<div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
