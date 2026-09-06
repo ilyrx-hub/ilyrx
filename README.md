@@ -1,20 +1,25 @@
-# IlyrX Developer Portal PRO+
-A static GitHub Pages-friendly developer portal.
+# IlyrX Hub — Pro + Supabase
 
-## Included
-- Professional developer-focused landing page
-- Local demo Register / Sign in + personal dashboard
-- Browser developer tools
-- Downloads library UI
-- Hosting/deployment resources
-- Notifications UI
-- Live-support style chat widget (frontend demo)
-- Light/dark theme
-- Responsive design
+This package is made for GitHub Pages/is-a.dev. It uses Supabase for the parts that GitHub Pages cannot run itself: email/password authentication, PostgreSQL data and realtime chat.
 
-## Important
-The authentication in this static version is a **demo** and stores data in the browser's localStorage. Do not use it for real passwords.
+## Setup
+1. Create a Supabase project: https://supabase.com/
+2. Open SQL Editor and run `supabase.sql`.
+3. In Project Settings → API, copy the Project URL and browser-safe Publishable/anon key into `config.js`.
+4. In Supabase Authentication settings, set the Site URL/redirect URL to your GitHub Pages URL, for example `https://ilyrx-hub.github.io/ilyrx/`.
+5. Upload the files to GitHub Pages. Keep `index.html` as the main page.
 
-For real accounts, email verification/password reset, email notifications, persistent profiles, and real live chat, connect a backend/auth provider such as Supabase/Firebase and a real chat/email service.
+Never put a Supabase secret/service_role key in `config.js`.
 
-For is-a.dev, keep the root site focused on software development and non-commercial content.
+## What works after configuration
+- Register/login with email + password
+- Session persistence
+- Password reset email
+- Online PostgreSQL database
+- Realtime community chat
+- Browser notification permission
+- Profile and sign-out
+- Professional developer hub UI
+
+## Email notifications
+Supabase Auth can send confirmation/reset/security emails. Custom emails such as “new chat message” require a server-side Edge Function or transactional email provider; secrets must never be placed in browser JS.

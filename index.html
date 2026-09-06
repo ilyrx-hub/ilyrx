@@ -1,127 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="IlyrX Developer Portal — developer tools, downloads, hosting guides and resources.">
-<title>IlyrX — Developer Portal</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="bg-orb orb1"></div><div class="bg-orb orb2"></div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IlyrX Hub — Developer Platform</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><div class="gridbg"></div><header><a class="brand" href="#"><b>IX</b><span>Ilyr<span>X</span><small>HUB</small></span></a><nav><a href="#tools">Tools</a><a href="#hosting">Hosting</a><a href="#downloads">Downloads</a><a href="#community">Community</a></nav><div class="actions"><button id="notify">◉</button><button id="account">Sign in</button></div></header><main><section class="hero"><div><em>● DEVELOPER HUB · ONLINE</em><h1>Build. Ship.<br><span>Level up.</span></h1><p>IlyrX Hub is a personal, non-commercial space for software development, useful tools, downloads, hosting guides and a live community.</p><div class="buttons"><a href="#tools">Explore tools →</a><button id="heroAccount">Create account</button></div><div class="stats"><div><b>24/7</b><small>Online hub</small></div><div><b>LIVE</b><small>Community</small></div><div><b>FREE</b><small>Resources</small></div></div></div><div class="terminal"><div class="bar">● ● ● <span>ilyrx://dashboard</span></div><pre>$ whoami
+ilyrx_developer
 
-<header class="top">
-  <a class="brand" href="#home"><span class="logo">&lt;/&gt;</span><span>ILYR<span class="accent">X</span></span><small>DEV</small></a>
-  <nav>
-    <a href="#home">Home</a><a href="#tools">Tools</a><a href="#downloads">Downloads</a>
-    <a href="#hosting">Hosting</a><a href="#resources">Resources</a>
-  </nav>
-  <div class="top-actions">
-    <button class="icon-btn" id="theme" title="Theme">☼</button>
-    <button class="icon-btn notification" id="notify" title="Notifications">♢<i>2</i></button>
-    <button class="account-btn" id="account">Sign in</button>
-  </div>
-</header>
+$ status
+<span>✓ all systems operational</span>
 
-<main id="home">
-<section class="hero">
-  <div class="hero-copy">
-    <div class="eyebrow"><span class="pulse"></span> DEVELOPER ENVIRONMENT ONLINE</div>
-    <h1>Build. Ship.<br><em>Learn.</em> Repeat.</h1>
-    <p>IlyrX is a personal non-commercial developer hub for browser tools, software downloads, hosting knowledge, web development resources and practical projects.</p>
-    <div class="actions"><a class="primary" href="#tools">Explore tools →</a><button class="ghost" id="create">Create account</button></div>
-    <div class="stats"><div><b>12+</b><span>Developer tools</span></div><div><b>25+</b><span>Resources</span></div><div><b>24/7</b><span>Access</span></div></div>
-  </div>
-  <div class="code-card">
-    <div class="codebar"><span>● ● ●</span><b>ilyrx.config.js</b><i>● online</i></div>
-    <pre><code><strong>const</strong> ilyrx = {
-  platform: <em>"developer-hub"</em>,
-  tools: [<em>"web"</em>, <em>"js"</em>, <em>"json"</em>],
-  hosting: <em>"guides"</em>,
-  commercial: <strong>false</strong>
-};
+Projects      08
+Tools         16+
+Community     LIVE
 
-<strong>export default</strong> ilyrx;</code></pre>
-    <div class="codefoot">✓ Environment ready <span>v2.0.0</span></div>
-  </div>
-</section>
+▋</pre></div></section><section id="tools"><div class="head"><div><i>01 / TOOLKIT</i><h2>Developer tools</h2></div><small>Useful. Fast. No nonsense.</small></div><div class="cards"><article><b>⌘</b><h3>JSON Toolkit</h3><p>Format, validate and inspect JSON in your browser.</p><button data-demo="JSON Toolkit">Open tool</button></article><article><b>⌁</b><h3>Web Utilities</h3><p>Quick helpers for URLs, text and developer workflows.</p><button data-demo="Web Utilities">Open tool</button></article><article><b>&lt;/&gt;</b><h3>Code Resources</h3><p>Snippets, references and starter resources.</p><button data-demo="Code Resources">Browse</button></article><article><b>⚙</b><h3>Project Lab</h3><p>Organize experiments and useful project links.</p><button data-demo="Project Lab">Open lab</button></article></div></section><section id="hosting" class="split"><div class="panel"><i>02 / HOSTING</i><h2>Hosting, domains & deployment</h2><p>Practical notes for static hosting, custom domains, DNS, SSL and Git-based deployments.</p><div class="checks">✓ GitHub Pages　 ✓ Custom domains<br>✓ DNS & SSL　 ✓ Deployment basics</div><button data-demo="Hosting Guide" class="primary">View guide →</button></div><div class="code"><header>deploy.config <span>● LIVE</span></header><pre>site:
+  name: "ilyrx-hub"
+  type: "static"
+  https: true
 
-<section class="quick-grid">
-  <article><span class="quick-icon">⌁</span><div><b>Personal Dashboard</b><p>Track downloads, saved tools and recent activity.</p></div></article>
-  <article><span class="quick-icon">⚡</span><div><b>Browser Tools</b><p>Useful utilities that run locally in your browser.</p></div></article>
-  <article><span class="quick-icon">☁</span><div><b>Hosting Guides</b><p>Learn GitHub Pages, domains and deployment basics.</p></div></article>
-  <article><span class="quick-icon">✦</span><div><b>Developer Resources</b><p>Curated references for web and software projects.</p></div></article>
-</section>
-
-<section id="tools">
-  <div class="head"><div><label>WORKSPACE</label><h2>Developer Tools</h2></div><span class="section-note">Runs locally • no upload required</span></div>
-  <div class="grid tools">
-    <article><b>&lt;/&gt;</b><h3>JSON Formatter</h3><p>Format and validate JSON directly in your browser.</p><button data-tool="json">Open tool →</button></article>
-    <article><b>#</b><h3>Color Converter</h3><p>Convert HEX values to RGB for UI projects.</p><button data-tool="color">Open tool →</button></article>
-    <article><b>Aa</b><h3>Character Counter</h3><p>Count characters, words and lines while typing.</p><button data-tool="counter">Open tool →</button></article>
-    <article><b>⌁</b><h3>Password Generator</h3><p>Generate strong random passwords locally.</p><button data-tool="password">Open tool →</button></article>
-  </div>
-</section>
-
-<section id="downloads">
-  <div class="head"><div><label>LIBRARY</label><h2>Software Downloads</h2></div><input id="search" placeholder="Search software..."></div>
-  <div class="downloads">
-    <article class="download-item"><strong>JS</strong><div><h3>Node.js Starter Pack</h3><p>Starter files for modern JavaScript projects.</p><small>JavaScript • v1.0</small></div><button class="download">Download</button></article>
-    <article class="download-item"><strong>WEB</strong><div><h3>Web Dev Templates</h3><p>Clean HTML, CSS and JS starter templates.</p><small>Web • v2.1</small></div><button class="download">Download</button></article>
-    <article class="download-item"><strong>DEV</strong><div><h3>IlyrX Utility Pack</h3><p>Small utilities and snippets for developers.</p><small>Tools • v1.4</small></div><button class="download">Download</button></article>
-  </div>
-</section>
-
-<section id="hosting">
-  <div class="head"><div><label>DEPLOYMENT</label><h2>Hosting & Deployment</h2></div></div>
-  <div class="feature-grid">
-    <article class="feature"><span>01</span><h3>GitHub Pages</h3><p>Learn how static websites are deployed from a repository.</p><a href="#resources">Read guide →</a></article>
-    <article class="feature"><span>02</span><h3>Custom Domains</h3><p>Understand DNS, CNAME records and subdomain configuration.</p><a href="#resources">Read guide →</a></article>
-    <article class="feature"><span>03</span><h3>Web Deployment</h3><p>Practical steps for taking a local project online.</p><a href="#resources">Read guide →</a></article>
-  </div>
-</section>
-
-<section id="resources">
-  <div class="head"><div><label>KNOWLEDGE BASE</label><h2>Developer Resources</h2></div></div>
-  <div class="resource-grid">
-    <a href="#" class="resource"><span>MDN</span><div><b>Web APIs & HTML/CSS/JS</b><p>Reference material for modern web development.</p></div><span>↗</span></a>
-    <a href="#" class="resource"><span>GIT</span><div><b>Git & GitHub Basics</b><p>Repositories, branches, commits and pull requests.</p></div><span>↗</span></a>
-    <a href="#" class="resource"><span>JSON</span><div><b>Data & APIs</b><p>Learn structured data, validation and API concepts.</p></div><span>↗</span></a>
-  </div>
-</section>
-</main>
-
-<button class="chat-launcher" id="chatLauncher">● <span>Live support</span></button>
-
-<div class="panel" id="auth">
-  <div class="panel-box auth-box"><button class="close">×</button><div class="panel-icon">✦</div>
-    <label>ILYRX ACCOUNT</label><h2 id="authTitle">Welcome back</h2><p>Sign in to access your personal developer dashboard.</p>
-    <input id="user" placeholder="Username"><input id="email" placeholder="Email (for registration)"><input id="pass" type="password" placeholder="Password">
-    <button class="primary full" id="submit">Sign in</button><button class="link-btn" id="switch">Create a new account</button>
-    <small class="privacy-note">Demo mode: credentials are stored only in this browser. Real secure authentication requires a backend.</small>
-  </div>
-</div>
-
-<div class="panel" id="tool">
-  <div class="panel-box tool-box"><button class="close">×</button><label>LOCAL TOOL</label><h2 id="toolTitle"></h2><div id="toolBody"></div></div>
-</div>
-
-<div class="panel" id="dashboard">
-  <div class="panel-box dashboard-box"><button class="close">×</button><label>YOUR SPACE</label><h2>Developer Dashboard</h2><div class="profile"><div class="avatar" id="avatar">I</div><div><b id="dashUser">Guest</b><p id="dashEmail">Not signed in</p></div></div>
-    <div class="dash-grid"><article><b id="downloadCount">0</b><span>Downloads</span></article><article><b>4</b><span>Tools used</span></article><article><b>2</b><span>Saved items</span></article></div>
-    <div class="activity"><h3>Recent activity</h3><p>✓ Developer Portal opened</p><p>✓ Browser tools ready</p><p>• No recent downloads</p></div>
-    <button class="ghost full" id="logout">Sign out</button>
-  </div>
-</div>
-
-<div class="panel" id="chat">
-  <div class="chat-box"><div class="chat-head"><div><b>IlyrX Support</b><small>Usually replies quickly</small></div><button class="close">×</button></div>
-    <div class="chat-messages" id="messages"><div class="msg bot">Hi! 👋 How can we help with IlyrX, hosting or developer tools?</div></div>
-    <div class="chat-input"><input id="chatInput" placeholder="Write a message..."><button id="sendChat">➤</button></div>
-    <small class="chat-note">This is a frontend demo. Connect a real chat provider or backend for live support.</small>
-  </div>
-</div>
-
-<footer class="foot"><div><b>&lt;/&gt; ILYR<span>X</span></b><p>Personal developer hub • Non-commercial</p></div><div><a href="#tools">Tools</a><a href="#hosting">Hosting</a><a href="#resources">Resources</a><a href="#home">Back to top ↑</a></div><small>© 2026 IlyrX</small></footer>
-<script src="app.js"></script>
-</body></html>
+domain:
+  provider: "is-a.dev"
+  source: "github-pages"</pre></div></section><section id="downloads"><div class="head"><div><i>03 / DOWNLOADS</i><h2>Resources</h2></div></div><div class="downloads"><article><b>ZIP</b><div><h3>Starter Projects</h3><p>Clean templates and examples.</p></div><button data-demo="Starter Projects">View</button></article><article><b>PDF</b><div><h3>Deployment Notes</h3><p>Hosting, domains and SSL reference.</p></div><button data-demo="Deployment Notes">View</button></article><article><b>DOC</b><div><h3>Developer Cheatsheets</h3><p>Commands and workflow references.</p></div><button data-demo="Developer Cheatsheets">View</button></article></div></section><section id="community"><div class="head"><div><i>04 / COMMUNITY</i><h2>Live chat</h2></div><small id="chatStatus">Sign in to join the room.</small></div><div class="chat"><aside><div class="room active"># <span><b>general</b><small>Developer community</small></span></div><div class="room"># <span><b>projects</b><small>Show your work</small></span></div><div class="room"># <span><b>help</b><small>Ask & answer</small></span></div><div class="online">● Online<br><small>Realtime room</small></div></aside><div class="chatmain"><div id="messages"><div class="empty">Sign in to load the realtime community chat.</div></div><form id="chatForm"><input id="chatInput" maxlength="500" placeholder="Write a message…" disabled><button disabled>Send</button></form></div></div></section></main><footer><b>Ilyr<span>X</span> Hub</b><p>Personal · Non-commercial · Developer focused</p><small>© 2026 IlyrX</small></footer><div class="modal hidden" id="authModal"><div><button class="close" id="closeAuth">×</button><strong>IX</strong><h2 id="authTitle">Welcome back</h2><p id="authSub">Sign in to your IlyrX account.</p><form id="authForm"><label id="nameField" class="hidden">Username<input id="authName" maxlength="40"></label><label>Email<input id="authEmail" type="email" required></label><label>Password<input id="authPassword" type="password" minlength="6" required></label><button class="primary">Sign in</button></form><button id="forgot" class="link">Forgot password?</button><p id="authMsg"></p><div class="switch"><span id="switchText">Don't have an account?</span> <button id="switch" class="link">Create one</button></div></div></div><div class="modal hidden" id="profileModal"><div class="profile"><button class="close" id="closeProfile">×</button><strong id="avatar">I</strong><h2 id="profileName">Account</h2><p id="profileEmail"></p><button id="logout">Sign out</button></div></div><div id="toast"></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script></body></html>
