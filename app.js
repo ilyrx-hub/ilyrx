@@ -34,7 +34,7 @@ $("#chatForm").onsubmit=async e=>{e.preventDefault();if(!supabase||!currentUser)
 $("#themeBtn").onclick=()=>{document.body.classList.toggle("light");toast(document.body.classList.contains("light")?"Light mode enabled":"Dark mode enabled")};
 document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");const f=b.dataset.filter;document.querySelectorAll(".game-card").forEach(c=>c.classList.toggle("hidden-card",f!=="all"&&c.dataset.cat!==f))});
 document.querySelectorAll("[data-demo]").forEach(b=>b.onclick=()=>toast(`${b.dataset.demo} is ready for your content.`));
-document.querySelectorAll("[data-game]").forEach(b=>b.onclick=()=>toast(`${b.dataset.game}: connect this button to your real order/provisioning system.`));
+document.querySelectorAll("[data-game]").forEach(b=>b.onclick=()=>toast(`${b.dataset.game}: connect this button to your real download link or official release page.`));
 $("#notificationBtn")?.addEventListener("click",async()=>{if("Notification"in window){const p=await Notification.requestPermission();toast(p==="granted"?"Browser notifications enabled.":"Notifications not enabled.")}});
 (async()=>{if(!supabase){updateUI();return}const s=await supabase.auth.getSession();currentUser=s.data.session?.user||null;updateUI();loadChat();supabase.auth.onAuthStateChange((_e,session)=>{currentUser=session?.user||null;updateUI();loadChat()})})();
 })();

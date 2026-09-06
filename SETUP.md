@@ -2,7 +2,7 @@
 
 ## What this package provides
 
-This is a professional game-hosting + developer-hub frontend inspired by the structure of modern hosting sites:
+This is a professional game-download + developer-hub frontend inspired by the structure of modern hosting sites:
 - Game catalog and filters
 - Hosting features
 - Developer tools/resources
@@ -97,3 +97,16 @@ Server-side API / Edge Functions:
 - hosting provider API calls
 - private secrets
 - custom email notifications
+
+
+## Download Hub setup
+
+The game cards are intentionally download-focused. Replace each demo button with your actual:
+- direct download URL
+- GitHub release
+- official game page
+- launcher/download page
+
+For copyrighted commercial games, use official/legal distribution sources and do not host unauthorized game copies, cracks or pirated installers.
+
+The client area can later store download history and favorites in Supabase.
