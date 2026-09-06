@@ -14,7 +14,7 @@
 <div class="topbar"><span>⚡ IlyrX Network</span><span><b class="dot"></b> All systems operational</span><span class="toplinks"><a href="#status">Status</a><a href="#support">Support</a><a href="#community">Discord / Community</a></span></div>
 <header class="nav">
   <a class="brand" href="#"><span class="logo">IX</span><span>Ilyr<span>X</span><small>HOSTING & DEV</small></span></a>
-  <nav><a href="#games">Game Servers</a><a href="#features">Features</a><a href="#developer">Developer</a><a href="#downloads">Downloads</a><a href="#support">Support</a></nav>
+  <nav><a href="#games">Game Servers</a><a href="#features">Features</a><a href="#developer">Developer</a><a href="#downloads">Downloads</a><a href="#support">Support</a><a href="#dashboard">Client Area</a></nav>
   <div class="nav-actions"><button class="theme" id="themeBtn">☼</button><button class="login-btn" id="accountBtn">Login</button><button class="primary" id="heroAccount">Get Started</button></div>
 </header>
 
@@ -82,6 +82,40 @@
 <section class="section" id="downloads">
  <div class="section-title"><span class="eyebrow">04 / RESOURCES</span><h2>Downloads & tools</h2><p>Organize your utilities, installers, documentation and community files.</p></div>
  <div class="resource-grid"><article><b>ZIP</b><h3>Starter Projects</h3><p>Clean templates for your next project.</p><button class="small secondary" data-demo="Starter Projects">Open</button></article><article><b>DOC</b><h3>Developer Cheatsheets</h3><p>Quick references for daily workflows.</p><button class="small secondary" data-demo="Developer Cheatsheets">Open</button></article><article><b>API</b><h3>Tools Library</h3><p>Utilities for JSON, URLs, hashes and text.</p><button class="small secondary" data-demo="Tools Library">Open</button></article><article><b>GUIDE</b><h3>Hosting Docs</h3><p>Domains, DNS, SSL and deployment notes.</p><button class="small secondary" data-demo="Hosting Docs">Open</button></article></div>
+</section>
+
+<section class="section dashboard" id="dashboard">
+  <div class="section-title row"><div><span class="eyebrow">CLIENT AREA</span><h2>Your control center</h2><p>Manage servers, orders, tickets, downloads and notifications from one dashboard.</p></div><button class="primary" id="dashboardLogin">Login / Register</button></div>
+  <div class="dash-grid">
+    <aside class="dash-side">
+      <div class="dash-user"><span class="dash-avatar" id="dashAvatar">I</span><div><b id="dashUser">Guest</b><small id="dashEmail">Not signed in</small></div></div>
+      <button class="dash-nav active" data-tab="overview">▦ Overview</button>
+      <button class="dash-nav" data-tab="servers">◈ My Servers</button>
+      <button class="dash-nav" data-tab="orders">◷ Orders</button>
+      <button class="dash-nav" data-tab="tickets">◫ Tickets</button>
+      <button class="dash-nav" data-tab="downloads">⇩ Downloads</button>
+      <button class="dash-nav" data-tab="notifications">♢ Notifications</button>
+      <button class="dash-nav" data-tab="profile">◎ Profile</button>
+    </aside>
+    <div class="dash-content">
+      <div class="dash-tab active" id="tab-overview">
+        <div class="dash-welcome"><div><span class="eyebrow">WELCOME BACK</span><h3 id="welcomeName">Guest</h3><p>Everything important at a glance.</p></div><span class="online-badge"><b class="dot"></b> Network online</span></div>
+        <div class="dash-cards">
+          <article><small>ACTIVE SERVERS</small><strong id="serverCount">0</strong><span>Ready to manage</span></article>
+          <article><small>OPEN ORDERS</small><strong id="orderCount">0</strong><span>Recent purchases</span></article>
+          <article><small>OPEN TICKETS</small><strong id="ticketCount">0</strong><span>Support requests</span></article>
+          <article><small>NOTIFICATIONS</small><strong id="notifCount">0</strong><span>Unread updates</span></article>
+        </div>
+        <div class="dash-panels"><article><div class="panel-head"><h4>Quick actions</h4></div><div class="quick"><button data-tabgo="servers">+ Deploy a server</button><button data-tabgo="tickets">Create support ticket</button><button data-tabgo="downloads">Browse downloads</button></div></article><article><div class="panel-head"><h4>System</h4></div><p class="system-row"><b>Network</b><span class="good">Operational</span></p><p class="system-row"><b>Control panel</b><span class="good">Operational</span></p><p class="system-row"><b>Realtime chat</b><span class="good">Operational</span></p></article></div>
+      </div>
+      <div class="dash-tab" id="tab-servers"><div class="tab-head"><h3>My Servers</h3><button class="primary" data-game="New server">Deploy Server</button></div><div class="server-list"><article class="server-row"><div class="server-icon">CS</div><div><b>Demo CS2 Server</b><small>EU • 128 tick • 32 slots</small></div><span class="server-status"><b class="dot"></b> Online</span><button class="small secondary" data-demo="Server console">Manage</button></article><div class="placeholder">Your real servers will appear here after your hosting backend is connected.</div></div></div>
+      <div class="dash-tab" id="tab-orders"><div class="tab-head"><h3>Orders</h3></div><div class="order-list"><div class="order-row"><span>#ILX-DEMO</span><b>Hosting plan</b><span>Pending backend</span><button class="small secondary">Details</button></div><div class="placeholder">Connect Stripe/another payment provider and your provisioning API to turn these into real orders.</div></div></div>
+      <div class="dash-tab" id="tab-tickets"><div class="tab-head"><h3>Support Tickets</h3><button class="primary" id="newTicket">New Ticket</button></div><div class="ticket-list"><div class="ticket-row"><span class="ticket-open">OPEN</span><b>Welcome to IlyrX Support</b><small>Ticket system ready</small></div><div class="placeholder">Real tickets can be stored in Supabase with an RLS policy for each authenticated user.</div></div></div>
+      <div class="dash-tab" id="tab-downloads"><div class="tab-head"><h3>Downloads</h3></div><div class="download-list"><div><b>Developer Starter Kit</b><span>ZIP • v1.0</span><button class="small secondary" data-demo="Developer Starter Kit">Download</button></div><div><b>Server Config Pack</b><span>ZIP • v1.0</span><button class="small secondary" data-demo="Server Config Pack">Download</button></div><div><b>IlyrX Documentation</b><span>PDF • v1.0</span><button class="small secondary" data-demo="Documentation">Open</button></div></div></div>
+      <div class="dash-tab" id="tab-notifications"><div class="tab-head"><h3>Notifications</h3><button class="secondary" id="notifyPermission">Enable browser notifications</button></div><div class="notice-list"><div><b>Welcome to IlyrX</b><span>Your client area is ready.</span><time>Now</time></div><div><b>Network status</b><span>All public services are operational.</span><time>Today</time></div></div></div>
+      <div class="dash-tab" id="tab-profile"><div class="tab-head"><h3>Profile</h3></div><div class="profile-box"><span class="dash-avatar big" id="profileDashAvatar">I</span><label>Username<input id="profileUsername" disabled></label><label>Email<input id="profileEmailInput" disabled></label><button class="danger" id="profileLogout">Sign out</button></div></div>
+    </div>
+  </div>
 </section>
 
 <section class="section account-section" id="support">

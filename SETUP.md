@@ -63,3 +63,37 @@ For custom notifications such as "support replied to your ticket", add a server-
 ## 6. is-a.dev
 
 The website can remain on GitHub Pages. Your `domains/ilyrx.json` is separate from this website and should contain only the DNS configuration required by is-a.dev.
+
+
+## 7. Client Area
+
+The new client area includes:
+- Overview and account summary
+- My Servers
+- Orders
+- Support tickets
+- Downloads
+- Notifications
+- Profile/sign out
+- Quick actions
+- System status
+
+The frontend is complete, but **real server provisioning, payments, and ticket persistence require a backend**. Do not place provider secrets in browser JavaScript.
+
+## 8. Recommended production architecture
+
+GitHub Pages:
+- static frontend only
+
+Supabase:
+- Auth
+- PostgreSQL
+- Realtime chat
+- tickets/orders/notifications data
+
+Server-side API / Edge Functions:
+- payment webhooks
+- server provisioning
+- hosting provider API calls
+- private secrets
+- custom email notifications
