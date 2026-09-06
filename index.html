@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="IlyrX Developer Hub — free software development tools, web development resources, code utilities and open-source projects.">
-<meta name="keywords" content="software development, web development, developer tools, HTML, CSS, JavaScript, programming resources, open source">
+<meta name="theme-color" content="#080a12">
+<meta name="description" content="IlyrX Developer Hub — a personal non-commercial software development hub with web tools, projects, references and useful resources.">
+<meta name="keywords" content="IlyrX, software development, web development, developer tools, HTML, CSS, JavaScript, programming, open source">
 <title>IlyrX — Developer Hub</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,60 +13,89 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><div class="nav wrap">
-<a class="logo" href="#home"><b>IX</b> Ilyr<span>X</span></a>
-<nav id="nav"><a href="#home">Home</a><a href="#development">Development</a><a href="#tools">Tools</a><a href="#projects">Projects</a><a href="#resources">Resources</a><a href="#contact">Contact</a></nav>
-<div class="actions"><button id="theme" title="Toggle theme">☼</button><button id="menu" title="Open menu">☰</button></div>
-</div></header>
+<header>
+  <div class="nav wrap">
+    <a class="logo" href="#home" aria-label="IlyrX home"><span class="logo-mark">IX</span><span>Ilyr<span class="accent">X</span></span></a>
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#development">Development</a><a href="#tools">Tools</a><a href="#projects">Projects</a><a href="#resources">Resources</a>
+    </nav>
+    <div class="actions"><button id="theme" title="Toggle theme" aria-label="Toggle theme">☼</button><button id="menu" title="Open menu" aria-label="Open menu">☰</button></div>
+  </div>
+</header>
 
 <main id="home">
 <section class="hero wrap">
-<div>
-<label>● ILYRX DEVELOPER HUB</label>
-<h1>Build, learn &amp; <em>create better software.</em></h1>
-<p>A personal non-commercial hub for software development, web development, coding utilities, projects and useful resources.</p>
-<div class="buttons"><a class="btn main" href="#tools">Explore developer tools →</a><a class="btn" href="#projects">View projects</a></div>
-<div class="stats"><div><strong>100%</strong><small>Free resources</small></div><div><strong>HTML</strong><small>CSS &amp; JavaScript</small></div><div><strong>Open</strong><small>Developer focused</small></div></div>
-</div>
-<div class="hero-card"><div class="bar"><i></i><i></i><i></i><b>ilyrx.dev</b></div><div class="terminal">
-<p><span class="pink">ilyrx@dev</span>:~$ <b>ls projects</b></p>
-<p class="muted">Loading developer resources...</p>
-<div class="result">✓ <span><b>Web Development</b><small>HTML, CSS &amp; JavaScript resources</small></span>→</div>
-<div class="result">✓ <span><b>Developer Tools</b><small>Browser-based coding utilities</small></span>→</div>
-<div class="result">✓ <span><b>Projects</b><small>Experiments and useful code</small></span>→</div>
-<p class="pink">ilyrx@dev:~$ <blink>_</blink></p></div></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span> ILYRX DEVELOPER HUB</div>
+    <h1>Build. Experiment.<br><span>Create better software.</span></h1>
+    <p class="lead">A personal, non-commercial space for software development, web technologies, practical browser tools, projects and developer resources.</p>
+    <div class="buttons"><a class="btn primary" href="#tools">Explore tools <span>→</span></a><a class="btn ghost" href="#projects">View projects</a></div>
+    <div class="quick-stats">
+      <div><strong>03</strong><small>Browser tools</small></div><div><strong>03</strong><small>Core technologies</small></div><div><strong>100%</strong><small>Non-commercial</small></div>
+    </div>
+  </div>
+  <div class="code-window" aria-label="Developer dashboard preview">
+    <div class="window-top"><span></span><span></span><span></span><b>ilyrx.dev / dashboard</b><i>● online</i></div>
+    <div class="code-body">
+      <div class="code-line"><em>01</em><span><b class="cyan">const</b> <strong>developerHub</strong> = {</span></div>
+      <div class="code-line"><em>02</em><span>&nbsp;&nbsp;focus: <mark>"software-development"</mark>,</span></div>
+      <div class="code-line"><em>03</em><span>&nbsp;&nbsp;stack: [<mark>"HTML"</mark>, <mark>"CSS"</mark>, <mark>"JavaScript"</mark>],</span></div>
+      <div class="code-line"><em>04</em><span>&nbsp;&nbsp;tools: <mark>3</mark>,</span></div>
+      <div class="code-line"><em>05</em><span>&nbsp;&nbsp;commercial: <b class="green">false</b>,</span></div>
+      <div class="code-line"><em>06</em><span>&nbsp;&nbsp;status: <b class="green">"building"</b></span></div>
+      <div class="code-line"><em>07</em><span>};</span></div>
+      <div class="terminal-note"><span class="prompt">ilyrx@dev</span>:~$ <b>launch --developer-mode</b><br><small>✓ Environment ready &nbsp; ✓ Tools loaded &nbsp; ✓ Resources online</small></div>
+    </div>
+  </div>
 </section>
 
-<section class="section wrap" id="development"><div class="head"><div><label>SOFTWARE DEVELOPMENT</label><h2>Development resources</h2></div><p>Practical topics and tools for building websites and software.</p></div>
-<div class="grid3">
-<article><b class="ico">&lt;/&gt;</b><h3>Web Development</h3><p>Learn and experiment with HTML, CSS, JavaScript and responsive web interfaces.</p><a href="#resources">Explore →</a></article>
-<article><b class="ico">JS</b><h3>JavaScript</h3><p>Browser-side utilities and small JavaScript experiments you can use and modify.</p><a href="#tools">Open tools →</a></article>
-<article><b class="ico">{} </b><h3>Code &amp; Projects</h3><p>Personal development projects, examples and reusable snippets for developers.</p><a href="#projects">View projects →</a></article>
-</div></section>
+<section class="section wrap" id="development">
+  <div class="section-head"><div><div class="eyebrow">SOFTWARE DEVELOPMENT</div><h2>Everything starts with code.</h2></div><p>Focused on practical front-end development and small software experiments.</p></div>
+  <div class="feature-grid">
+    <article class="feature-card featured"><span class="number">01</span><div class="feature-icon">&lt;/&gt;</div><h3>Web Development</h3><p>Build responsive interfaces with semantic HTML, modern CSS and browser-side JavaScript.</p><a href="#resources">Explore references <span>→</span></a></article>
+    <article class="feature-card"><span class="number">02</span><div class="feature-icon">JS</div><h3>JavaScript</h3><p>Interactive components, browser utilities and small experiments written for the modern web.</p><a href="#tools">Try a tool <span>→</span></a></article>
+    <article class="feature-card"><span class="number">03</span><div class="feature-icon">{ }</div><h3>Projects & Code</h3><p>Personal projects and reusable ideas designed to learn, test and improve development skills.</p><a href="#projects">See projects <span>→</span></a></article>
+  </div>
+</section>
 
-<section class="section dark" id="tools"><div class="wrap"><div class="head"><div><label>DEVELOPER TOOLS</label><h2>Useful browser tools</h2></div><p>Small utilities built with client-side JavaScript. No installation required.</p></div>
-<div class="tools">
-<article><h3>🔐 Password Generator</h3><p>Generate a random password locally in your browser.</p><div class="row"><input id="pass" readonly value="Click Generate"><button class="btn main" id="gen">Generate</button></div></article>
-<article><h3>🧮 Calculator</h3><p>Perform quick calculations directly in your browser.</p><input id="calc" class="calc" readonly value="0"><div id="keys" class="keys"></div></article>
-<article><h3>🔤 Character Counter</h3><p>Count characters and words while you write or test text.</p><textarea id="counter" placeholder="Type or paste text..."></textarea><div class="counter"><span id="chars">0 characters</span><span id="words">0 words</span></div></article>
-</div></div></section>
+<section class="section tools-section" id="tools">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">DEVELOPER TOOLS</div><h2>Useful tools. Right in your browser.</h2></div><p>Client-side utilities with no installation and no account required.</p></div>
+    <div class="tools-grid">
+      <article class="tool-card"><div class="tool-top"><span class="tool-icon">⌁</span><span class="tag">LOCAL</span></div><h3>Password Generator</h3><p>Create a random 16-character password locally in your browser.</p><div class="input-row"><input id="pass" readonly value="Click Generate"><button class="small-btn primary" id="gen">Generate</button></div></article>
+      <article class="tool-card"><div class="tool-top"><span class="tool-icon">+</span><span class="tag">UTILITY</span></div><h3>Calculator</h3><p>Quick calculations without leaving the page.</p><input id="calc" class="calc" readonly value="0"><div id="keys" class="keys"></div></article>
+      <article class="tool-card"><div class="tool-top"><span class="tool-icon">Aa</span><span class="tag">TEXT</span></div><h3>Character Counter</h3><p>Count characters and words while testing or writing text.</p><textarea id="counter" placeholder="Type or paste text..."></textarea><div class="counter"><span id="chars">0 characters</span><span id="words">0 words</span></div></article>
+    </div>
+  </div>
+</section>
 
-<section class="section wrap" id="projects"><div class="head"><div><label>PROJECTS</label><h2>Development projects</h2></div><p>Experiments and practical software-development work by IlyrX.</p></div>
-<div class="grid3">
-<article><b class="ico">WEB</b><h3>IlyrX Web Hub</h3><p>A responsive HTML, CSS and JavaScript website demonstrating modern front-end structure.</p><a href="#home">Open project →</a></article>
-<article><b class="ico">JS</b><h3>Browser Utilities</h3><p>Small JavaScript tools designed to solve simple everyday developer and user tasks.</p><a href="#tools">Try tools →</a></article>
-<article><b class="ico">CSS</b><h3>UI Experiments</h3><p>Reusable interface ideas, responsive layouts and front-end experiments.</p><a href="#resources">Learn more →</a></article>
-</div></section>
+<section class="section wrap" id="projects">
+  <div class="section-head"><div><div class="eyebrow">PROJECTS</div><h2>Built to learn and improve.</h2></div><p>Small, practical development projects and front-end experiments.</p></div>
+  <div class="project-grid">
+    <article class="project-card"><div class="project-top"><span>WEB</span><small>01</small></div><h3>IlyrX Web Hub</h3><p>A responsive HTML, CSS and JavaScript website demonstrating a modern developer-focused interface.</p><div class="chips"><i>HTML</i><i>CSS</i><i>JavaScript</i></div><a href="#home">Open project <span>↗</span></a></article>
+    <article class="project-card"><div class="project-top"><span>JS</span><small>02</small></div><h3>Browser Utilities</h3><p>A collection of lightweight client-side tools created for everyday development and user tasks.</p><div class="chips"><i>DOM</i><i>JavaScript</i><i>UI</i></div><a href="#tools">Try tools <span>↗</span></a></article>
+    <article class="project-card"><div class="project-top"><span>UI</span><small>03</small></div><h3>Interface Experiments</h3><p>Responsive layouts, reusable components and visual experiments for modern web interfaces.</p><div class="chips"><i>Responsive</i><i>CSS</i><i>UX</i></div><a href="#development">Explore stack <span>↗</span></a></article>
+  </div>
+</section>
 
-<section class="section wrap" id="resources"><div class="head"><div><label>RESOURCES</label><h2>Developer reference</h2></div><p>Useful starting points for learning and building software.</p></div>
-<div class="downloads">
-<article><strong>HTML</strong><span><b>HTML Reference</b><small>Structure, semantic elements and accessible web pages.</small></span><i>WEB</i><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">Open</a></article>
-<article><strong>CSS</strong><span><b>CSS Reference</b><small>Layouts, responsive design, selectors and styling.</small></span><i>WEB</i><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">Open</a></article>
-<article><strong>JS</strong><span><b>JavaScript Reference</b><small>Language documentation and browser programming resources.</small></span><i>CODE</i><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">Open</a></article>
-</div></section>
+<section class="section resources-section" id="resources">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">DEVELOPER RESOURCES</div><h2>Reliable places to keep learning.</h2></div><p>Quick links to official web-development documentation.</p></div>
+    <div class="resource-bar"><input id="search" type="search" placeholder="Search resources..." aria-label="Search resources"><select id="filter" aria-label="Filter resources"><option value="all">All resources</option><option value="web">Web</option><option value="code">Code</option></select></div>
+    <div class="resource-list" id="downloadsList">
+      <article data-search="html web structure semantic accessibility" data-cat="web"><strong>HTML</strong><span><b>HTML Reference</b><small>Elements, structure, semantics and accessible web pages.</small></span><i>WEB</i><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">Open ↗</a></article>
+      <article data-search="css web layout responsive selectors styling" data-cat="web"><strong>CSS</strong><span><b>CSS Reference</b><small>Selectors, layouts, responsive design and modern styling.</small></span><i>WEB</i><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">Open ↗</a></article>
+      <article data-search="javascript js code language browser programming" data-cat="code"><strong>JS</strong><span><b>JavaScript Reference</b><small>Language documentation and browser programming resources.</small></span><i>CODE</i><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">Open ↗</a></article>
+    </div>
+    <p id="none" class="empty">No resources found.</p>
+  </div>
+</section>
 
-<section class="section wrap" id="contact"><div class="contact"><div><label>CONTACT</label><h2>Software development &amp; projects</h2><p>IlyrX is a personal non-commercial developer website. Contact details and project links can be added here.</p></div><a class="btn main" href="mailto:contact@ilyrx.is-a.dev">Contact IlyrX →</a></div></section>
+<section class="section wrap" id="contact"><div class="contact-card"><div><div class="eyebrow">ABOUT ILYRX</div><h2>Keep building. Keep learning.</h2><p>IlyrX is a personal non-commercial developer hub focused on software development, web tools, projects and useful technical resources.</p></div><a class="btn primary" href="mailto:contact@ilyrx.is-a.dev">Contact IlyrX <span>→</span></a></div></section>
 </main>
-<footer><div class="wrap"><a class="logo" href="#home"><b>IX</b> Ilyr<span>X</span></a><small>© 2026 IlyrX. Personal non-commercial software development hub.</small><a href="#home">Back to top ↑</a></div></footer>
-<div id="toast"></div><script src="script.js"></script>
-</body></html>
+
+<footer><div class="wrap footer-inner"><a class="logo" href="#home"><span class="logo-mark">IX</span><span>Ilyr<span class="accent">X</span></span></a><small>© 2026 IlyrX · Personal non-commercial software development hub.</small><a href="#home">Back to top ↑</a></div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
