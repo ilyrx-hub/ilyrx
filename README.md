@@ -1,17 +1,12 @@
-# IlyrX Developer Hub
+# IlyrX Developer Portal
 
-A personal, non-commercial website focused on software development and web development. It is built with plain HTML, CSS and JavaScript and includes browser-based developer utilities, front-end projects and links to developer documentation.
+Professional software-development focused portal inspired by the supplied visual reference.
 
-## Files
-- `index.html` — main developer-focused website
-- `style.css` — responsive design and theme styles
-- `script.js` — navigation, theme, password generator, calculator and character counter
-- `.nojekyll` — GitHub Pages configuration
+Includes responsive UI, developer tools, hosting/resources sections, software-download placeholders, and a browser-only demo register/login flow.
 
-## Purpose
-IlyrX is a personal developer hub for software development, web development, coding utilities, front-end experiments and useful programming resources. It does not provide paid products or commercial services.
+## Important
+The account system uses localStorage and is only a frontend demo. For real user accounts, use a backend/auth provider such as Supabase or Firebase with proper authorization and security rules.
 
-## GitHub Pages
-Upload these files to a GitHub repository and enable **Settings → Pages → Deploy from a branch → main → / (root)**.
+The download buttons are placeholders; only distribute files you are authorized to distribute.
 
-The site can then be used as the website for an is-a.dev domain registration.
+For an is-a.dev root subdomain, keep the main site clearly software-development related. Game content is safer as a nested subdomain after the root domain is approved.
