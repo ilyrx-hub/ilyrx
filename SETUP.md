@@ -110,3 +110,19 @@ The game cards are intentionally download-focused. Replace each demo button with
 For copyrighted commercial games, use official/legal distribution sources and do not host unauthorized game copies, cracks or pirated installers.
 
 The client area can later store download history and favorites in Supabase.
+
+
+## Account functionality
+
+The ZIP now includes a working **static local account system**:
+- Sign up
+- Sign in
+- Sign out
+- Password-reset request UI
+- Session persistence in the browser
+
+Because GitHub Pages is static, this local mode stores accounts only in the visitor's browser. **Do not use it for sensitive/production authentication.** For real accounts across devices, connect the existing UI to Supabase Auth and store only safe profile data in Supabase.
+
+## Official game links
+
+Game buttons now open official/legal game pages. Minecraft links to Mojang/Microsoft's official download page; paid Steam games open their official Steam store pages. Replace or add links only to sources you are authorized to distribute.

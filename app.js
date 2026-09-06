@@ -44,3 +44,49 @@ $("#dashboardLogin")?.addEventListener("click",()=>currentUser?document.querySel
 $("#profileLogout")?.addEventListener("click",()=>$("#logoutBtn").click());
 $("#newTicket")?.addEventListener("click",()=>toast(currentUser?"Ticket form is ready for your Supabase tickets table.":"Sign in first."));
 $("#notifyPermission")?.addEventListener("click",async()=>{if("Notification"in window){const p=await Notification.requestPermission();toast(p==="granted"?"Browser notifications enabled.":"Notifications not enabled.")}else toast("This browser does not support notifications.")});
+
+/* IlyrX local account system.
+   This is suitable for a static GitHub Pages site: accounts are stored locally in the browser.
+   For real multi-device authentication, connect the same UI to Supabase Auth (see SETUP.md). */
+(function(){
+ const K="ilyrx_local_users_v1", S="ilyrx_local_session_v1";
+ const load=()=>JSON.parse(localStorage.getItem(K)||"[]");
+ const save=x=>localStorage.setItem(K,JSON.stringify(x));
+ const session=()=>JSON.parse(localStorage.getItem(S)||"null");
+ const setSession=u=>{if(u)localStorage.setItem(S,JSON.stringify(u));else localStorage.removeItem(S);window.currentUser=u;};
+ const esc=x=>String(x).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+ window.ilyrxAuth={
+  register(name,email,password){
+   name=name.trim(); email=email.trim().toLowerCase();
+   if(!name||!email||password.length<6)return toast("Use a username, valid email and password of 6+ characters.");
+   let users=load(); if(users.some(u=>u.email===email))return toast("An account with this email already exists.");
+   const u={id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),name,email,password,createdAt:new Date().toISOString()};
+   users.push(u);save(users);setSession({id:u.id,name:u.name,email:u.email});updateUI();toast("Account created successfully."); closeAuth?.();
+  },
+  login(email,password){
+   email=email.trim().toLowerCase();const u=load().find(x=>x.email===email&&x.password===password);
+   if(!u)return toast("Incorrect email or password.");
+   setSession({id:u.id,name:u.name,email:u.email});updateUI();toast("Welcome back, "+u.name+"!");closeAuth?.();
+  },
+  logout(){setSession(null);updateUI();toast("Signed out.");},
+  reset(email){const u=load().find(x=>x.email===email.trim().toLowerCase());toast(u?"Password reset demo: check your email (connect Supabase email reset for production).":"No account found for that email.")}
+ };
+ setSession(session());
+ const modal=document.createElement("div");modal.id="authModal";modal.innerHTML=`
+ <div class="auth-overlay"><div class="auth-box">
+ <button class="auth-close" aria-label="Close">×</button><span class="eyebrow">ILYRX ACCOUNT</span><h3 id="authTitle">Welcome back</h3>
+ <p id="authDesc">Sign in to your library and download history.</p>
+ <div id="authFields"></div><button class="primary auth-submit" id="authSubmit">Sign in</button>
+ <button class="auth-switch" id="authSwitch">Create an account</button>
+ </div></div>`;
+ document.body.appendChild(modal);
+ const fields=modal.querySelector("#authFields"),title=modal.querySelector("#authTitle"),desc=modal.querySelector("#authDesc"),submit=modal.querySelector("#authSubmit"),sw=modal.querySelector("#authSwitch");
+ let mode="login";
+ function render(){title.textContent=mode==="login"?"Welcome back":"Create your IlyrX account";desc.textContent=mode==="login"?"Sign in to your library and download history.":"Create a free account to save games and track downloads.";fields.innerHTML=(mode==="register"?'<label>Username<input id="authName" autocomplete="username"></label>':'')+'<label>Email<input id="authEmail" type="email" autocomplete="email"></label><label>Password<input id="authPass" type="password" autocomplete="'+(mode==="login"?"current-password":"new-password")+'"></label>'+(mode==="login"?'<button class="forgot" id="forgot">Forgot password?</button>':'');submit.textContent=mode==="login"?"Sign in":"Create account";sw.textContent=mode==="login"?"Create an account":"Already have an account";modal.querySelector("#forgot")?.addEventListener("click",()=>{const e=modal.querySelector("#authEmail").value;ilyrxAuth.reset(e)});}
+ window.openAuth=m=>{mode=m||"login";render();modal.classList.add("show");};
+ window.closeAuth=()=>modal.classList.remove("show");
+ modal.querySelector(".auth-close").onclick=closeAuth;sw.onclick=()=>{mode=mode==="login"?"register":"login";render()};
+ submit.onclick=()=>mode==="login"?ilyrxAuth.login(modal.querySelector("#authEmail").value,modal.querySelector("#authPass").value):ilyrxAuth.register(modal.querySelector("#authName").value,modal.querySelector("#authEmail").value,modal.querySelector("#authPass").value);
+ render();
+ document.addEventListener("click",e=>{const b=e.target.closest("#accountBtn,#heroLogin,#heroAccount,#supportAccount,#dashboardLogin");if(!b)return;e.preventDefault();openAuth(currentUser?"profile":"login")});
+})();
