@@ -1,12 +1,20 @@
-# IlyrX Developer Portal
+# IlyrX Developer Portal PRO+
+A static GitHub Pages-friendly developer portal.
 
-Professional software-development focused portal inspired by the supplied visual reference.
-
-Includes responsive UI, developer tools, hosting/resources sections, software-download placeholders, and a browser-only demo register/login flow.
+## Included
+- Professional developer-focused landing page
+- Local demo Register / Sign in + personal dashboard
+- Browser developer tools
+- Downloads library UI
+- Hosting/deployment resources
+- Notifications UI
+- Live-support style chat widget (frontend demo)
+- Light/dark theme
+- Responsive design
 
 ## Important
-The account system uses localStorage and is only a frontend demo. For real user accounts, use a backend/auth provider such as Supabase or Firebase with proper authorization and security rules.
+The authentication in this static version is a **demo** and stores data in the browser's localStorage. Do not use it for real passwords.
 
-The download buttons are placeholders; only distribute files you are authorized to distribute.
+For real accounts, email verification/password reset, email notifications, persistent profiles, and real live chat, connect a backend/auth provider such as Supabase/Firebase and a real chat/email service.
 
-For an is-a.dev root subdomain, keep the main site clearly software-development related. Game content is safer as a nested subdomain after the root domain is approved.
+For is-a.dev, keep the root site focused on software development and non-commercial content.
