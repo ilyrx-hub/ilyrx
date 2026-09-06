@@ -1,19 +1,17 @@
-# IlyrX Digital Hub
+# IlyrX Developer Hub
 
-IlyrX is a personal, non-commercial website focused on software development, browser utilities, gaming resources and useful web resources.
+A personal, non-commercial website focused on software development and web development. It is built with plain HTML, CSS and JavaScript and includes browser-based developer utilities, front-end projects and links to developer documentation.
 
-## Included
-- Responsive landing page
-- Software and gaming resource sections
-- Password generator with copy button
-- Word, character and line counter
-- Browser calculator with keypad
-- Developer resource links
-- GitHub project/contact section
-- GitHub Pages compatible static files
+## Files
+- `index.html` — main developer-focused website
+- `style.css` — responsive design and theme styles
+- `script.js` — navigation, theme, password generator, calculator and character counter
+- `.nojekyll` — GitHub Pages configuration
 
-## Run locally
-Open `index.html` in a browser. No build step or server is required.
+## Purpose
+IlyrX is a personal developer hub for software development, web development, coding utilities, front-end experiments and useful programming resources. It does not provide paid products or commercial services.
 
 ## GitHub Pages
-Publish the repository root from the `main` branch. The project is static HTML/CSS/JavaScript and includes `.nojekyll`.
+Upload these files to a GitHub repository and enable **Settings → Pages → Deploy from a branch → main → / (root)**.
+
+The site can then be used as the website for an is-a.dev domain registration.
