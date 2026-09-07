@@ -1,111 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!doctype html><html><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>IlyrX — Games, Mods & Downloads</title>
-<meta name="description" content="IlyrX is a gaming download and developer community hub.">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header class="topbar">
-  <div class="top-inner">
-    <a class="logo" href="index.html">Ilyr<span>X</span></a>
-    <nav class="main-nav">
-      <a class="active" href="#games">Games</a><a href="#mods">Mods</a><a href="#collections">Collections</a>
-      <a href="#downloads">Downloads</a><a href="#developers">Developers</a><a href="#community">Community</a>
-    </nav>
-    <div class="head-actions">
-      <button class="icon-btn" id="searchBtn" title="Search">⌕</button>
-      <button class="login-btn" id="accountBtn">Log in</button>
-    </div>
-  </div>
-</header>
-
-<section class="search-panel" id="searchPanel">
-  <div class="search-inner"><input id="siteSearch" placeholder="Search games, mods, files and creators..."><button id="closeSearch">×</button></div>
-</section>
-
-<main>
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <div class="eyebrow">ILYRX COMMUNITY HUB</div>
-      <h1>Gaming content.<br><span>All in one place.</span></h1>
-      <p>Discover games, mods, files, collections and developer resources from one clean community hub.</p>
-      <div class="hero-buttons"><a class="primary-btn" href="#games">Browse games</a><a class="ghost-btn" href="#mods">Explore mods</a></div>
-    </div>
-    <div class="hero-panel"><div class="hero-glow"></div><div class="hero-mark">ILYRX</div><div class="hero-panel-bottom"><span>COMMUNITY</span><b>Games · Mods · Downloads</b></div></div>
-  </div>
-</section>
-
-<section class="stats"><div><b>8</b><span>Games</span></div><div><b>24+</b><span>Resources</span></div><div><b>100%</b><span>Community driven</span></div><div><b>FREE</b><span>To browse</span></div></section>
-
-<section class="section" id="games">
-  <div class="section-head"><div><label>EXPLORE</label><h2>Popular games</h2></div><a href="#all-games">View all →</a></div>
-  <div class="game-grid">
-    <a class="game-card" href="games/cs2.html">
-      <div class="game-art"><span>CS2</span><small>FPS</small></div>
-      <div class="game-body"><strong>Counter-Strike 2</strong><span>Mods · Files · Updates</span></div>
-    </a>
-    <a class="game-card" href="games/cs16.html">
-      <div class="game-art"><span>CS 1.6</span><small>FPS</small></div>
-      <div class="game-body"><strong>Counter-Strike 1.6</strong><span>Mods · Files · Updates</span></div>
-    </a>
-    <a class="game-card" href="games/minecraft.html">
-      <div class="game-art"><span>MC</span><small>Sandbox</small></div>
-      <div class="game-body"><strong>Minecraft</strong><span>Mods · Files · Updates</span></div>
-    </a>
-    <a class="game-card" href="games/rust.html">
-      <div class="game-art"><span>RUST</span><small>Survival</small></div>
-      <div class="game-body"><strong>Rust</strong><span>Mods · Files · Updates</span></div>
-    </a>
-    <a class="game-card" href="games/ark.html">
-      <div class="game-art"><span>ARK</span><small>Survival</small></div>
-      <div class="game-body"><strong>ARK: Survival Evolved</strong><span>Mods · Files · Updates</span></div>
-    </a>
-    <a class="game-card" href="games/samp.html">
-      <div class="game-art"><span>SAMP</span><small>Multiplayer</small></div>
-      <div class="game-body"><strong>SAMP</strong><span>Mods · Files · Updates</span></div>
-    </a>
-    <a class="game-card" href="games/tf2.html">
-      <div class="game-art"><span>TF2</span><small>FPS</small></div>
-      <div class="game-body"><strong>Team Fortress 2</strong><span>Mods · Files · Updates</span></div>
-    </a>
-    <a class="game-card" href="games/l4d2.html">
-      <div class="game-art"><span>L4D2</span><small>Co-op</small></div>
-      <div class="game-body"><strong>Left 4 Dead 2</strong><span>Mods · Files · Updates</span></div>
-    </a></div>
-</section>
-
-<section class="section split" id="mods">
-  <div class="feature-card"><div class="feature-art big">MODS</div><div><label>MOD LIBRARY</label><h2>Customize your games</h2><p>Find maps, skins, scripts, tools and community-made files organized by game.</p><a class="primary-btn small" href="#all-mods">Browse mods</a></div></div>
-  <div class="feature-card"><div class="feature-art alt">TOOLS</div><div><label>DEVELOPER HUB</label><h2>Build & share</h2><p>Useful developer tools, guides and resources for creators and server communities.</p><a class="ghost-btn small" href="#developers">Open developer hub</a></div></div>
-</section>
-
-<section class="section" id="downloads">
-  <div class="section-head"><div><label>DISCOVER</label><h2>Latest downloads</h2></div><a href="#all-downloads">View all →</a></div>
-  <div class="download-list">
-    <div><span class="file-icon">ZIP</span><div><b>Community Starter Pack</b><small>Resources · Updated recently</small></div><a href="#mods">Explore</a></div>
-    <div><span class="file-icon">MOD</span><div><b>Game Enhancement Pack</b><small>Mods · Community release</small></div><a href="#mods">Explore</a></div>
-    <div><span class="file-icon">TOOL</span><div><b>Developer Toolkit</b><small>Developer · Utilities</small></div><a href="#developers">Explore</a></div>
-  </div>
-</section>
-
-<section class="section dark-block" id="collections">
-  <div><label>COLLECTIONS</label><h2>Curated gaming packs</h2><p>Group your favorite mods and resources into one collection for easy access.</p></div>
-  <a class="primary-btn" href="#create">Create collection</a>
-</section>
-
-<section class="section community" id="community">
-  <label>COMMUNITY</label><h2>Your library, your profile</h2>
-  <p>Sign up to save games, favorite resources and keep your download history in your personal IlyrX library.</p>
-  <button class="primary-btn" id="heroAccount">Create free account</button>
-</section>
-</main>
-
-<footer><div class="footer-inner"><b>Ilyr<span>X</span></b><span>Games · Mods · Downloads · Developer Hub</span><span>© 2026 IlyrX</span></div></footer>
-
-<script src="config.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="app.js"></script>
-</body></html>
+<title>IlyrX — Games & Downloads</title><link rel="stylesheet" href="styles.css"></head><body>
+<div class="notice">ILYRX • GAMES • MODS • DOWNLOADS <button onclick="this.parentElement.remove()">×</button></div>
+<header><a class="logo" href="#">ILY<span>RX</span></a><nav><a class="active" href="#games">GAMES</a><a href="#mods">MODS</a><a href="#downloads">DOWNLOADS</a><a href="#developers">DEVELOPERS</a><a href="#community">COMMUNITY</a></nav>
+<div class="actions"><button id="searchBtn">⌕</button><button id="accountBtn">LOG IN</button></div></header>
+<div id="search" class="search"><input id="q" placeholder="Search games, mods and files..."><button onclick="search.classList.remove('show')">×</button></div>
+<section class="hero"><div class="wrap hero-in"><div><small>WELCOME TO ILYRX</small><h1>YOUR GAME.<br><b>YOUR WAY.</b></h1><p>Discover games, mods, downloads and developer resources in one modern gaming hub.</p><a class="cta" href="#games">EXPLORE GAMES</a><a class="ghost" href="#mods">BROWSE MODS</a></div><div class="trending"><small>TRENDING NOW</small><p><b>01</b> Counter-Strike 2 <i>FPS</i></p><p><b>02</b> Rust <i>SURVIVAL</i></p><p><b>03</b> Minecraft <i>SANDBOX</i></p></div></div></section>
+<div class="stats"><span><b>8</b> GAMES</span><span><b>24+</b> RESOURCES</span><span><b>∞</b> COMMUNITY</span><span><b>FREE</b> TO EXPLORE</span></div>
+<section class="wrap section" id="games"><div class="top"><div><small>EXPLORE</small><h2>Featured Games</h2></div><a>VIEW ALL →</a></div><div class="games">
+<a class="game cs2" href="games/cs2.html"><b>COUNTER-STRIKE 2</b><small>FPS • MODS • FILES</small></a>
+<a class="game rust" href="games/rust.html"><b>RUST</b><small>SURVIVAL • MODS • FILES</small></a>
+<a class="game ark" href="games/ark.html"><b>ARK: SURVIVAL EVOLVED</b><small>SURVIVAL • MODS • FILES</small></a>
+<a class="game tf2" href="games/tf2.html"><b>TEAM FORTRESS 2</b><small>FPS • MODS • FILES</small></a>
+<a class="game mc" href="games/minecraft.html"><b>MINECRAFT</b><small>SANDBOX • MODS • FILES</small></a>
+<a class="game cs16" href="games/cs16.html"><b>COUNTER-STRIKE 1.6</b><small>FPS • MODS • FILES</small></a>
+<a class="game l4d2" href="games/l4d2.html"><b>LEFT 4 DEAD 2</b><small>CO-OP • MODS • FILES</small></a>
+<a class="game samp" href="games/samp.html"><b>SAMP</b><small>MULTIPLAYER • FILES</small></a></div></section>
+<section class="band" id="mods"><div class="wrap"><div class="top"><div><small>COMMUNITY CONTENT</small><h2>Mods & Resources</h2></div></div><div class="tiles"><article><b>MOD LIBRARY</b><h3>Customize your games</h3><p>Skins, maps, scripts and community resources organized by game.</p><button data-login>EXPLORE</button></article><article><b>DEVELOPER HUB</b><h3>Build & share</h3><p>Tools and resources for creators, servers and gaming projects.</p><button data-login>OPEN HUB</button></article><article><b>COLLECTIONS</b><h3>Save your favorites</h3><p>Create collections and keep your favorite files in one place.</p><button data-login>CREATE</button></article></div></div></section>
+<section class="wrap section" id="downloads"><div class="top"><div><small>LATEST</small><h2>Latest Downloads</h2></div></div><div class="list"><div><b>Community Starter Pack</b><span>PACK</span><em>NEW</em></div><div><b>Developer Toolkit</b><span>TOOL</span><em>UPDATED</em></div><div><b>Game Enhancement Resources</b><span>MOD</span><em>NEW</em></div></div></section>
+<section class="developer" id="developers"><div class="wrap"><small>ILYRX DEVELOPER</small><h2>Build. Share. Discover.</h2><p>Useful tools and resources for developers and gaming communities.</p></div></section>
+<section class="community" id="community"><small>JOIN ILYRX</small><h2>Your library follows you.</h2><p>Create an account to save games, favorites and downloads.</p><button class="cta" id="heroAccount">CREATE FREE ACCOUNT</button></section>
+<div id="chat" class="chat"><header>ILYRX LIVE CHAT <button id="chatClose">×</button></header><div id="messages">Welcome to IlyrX 👋<br>Sign in to join the chat.</div><footer><input id="chatInput" placeholder="Write a message..."><button id="send">→</button></footer></div><button id="chatOpen" class="chatopen">CHAT ●</button>
+<footer><div class="wrap"><b>ILY<span>RX</span></b><span>Games • Mods • Downloads • Developer Hub</span><span>© 2026 IlyrX</span></div></footer>
+<script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script></body></html>
