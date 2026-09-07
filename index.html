@@ -1,141 +1,111 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>IlyrX — Game Download & Developer Hub</title>
-<meta name="description" content="IlyrX game hosting, developer tools, downloads, server monitoring and community.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IlyrX — Games, Mods & Downloads</title>
+<meta name="description" content="IlyrX is a gaming download and developer community hub.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="topbar"><span>⚡ IlyrX Network</span><span><b class="dot"></b> All systems operational</span><span class="toplinks"><a href="#status">Status</a><a href="#support">Support</a><a href="#community">Discord / Community</a></span></div>
-<header class="nav">
-  <a class="brand" href="#"><span class="logo">IX</span><span>Ilyr<span>X</span><small>HOSTING & DEV</small></span></a>
-  <nav><a href="#games">Games</a><a href="#features">Features</a><a href="#developer">Developer</a><a href="#downloads">Downloads</a><a href="#support">Support</a><a href="#dashboard">My Library</a></nav>
-  <div class="nav-actions"><button class="theme" id="themeBtn">☼</button><button class="login-btn" id="accountBtn">Login</button><button class="primary" id="heroAccount">Get Started</button></div>
+<header class="topbar">
+  <div class="top-inner">
+    <a class="logo" href="index.html">Ilyr<span>X</span></a>
+    <nav class="main-nav">
+      <a class="active" href="#games">Games</a><a href="#mods">Mods</a><a href="#collections">Collections</a>
+      <a href="#downloads">Downloads</a><a href="#developers">Developers</a><a href="#community">Community</a>
+    </nav>
+    <div class="head-actions">
+      <button class="icon-btn" id="searchBtn" title="Search">⌕</button>
+      <button class="login-btn" id="accountBtn">Log in</button>
+    </div>
+  </div>
 </header>
+
+<section class="search-panel" id="searchPanel">
+  <div class="search-inner"><input id="siteSearch" placeholder="Search games, mods, files and creators..."><button id="closeSearch">×</button></div>
+</section>
 
 <main>
 <section class="hero">
-  <div class="hero-text">
-    <div class="eyebrow"><b class="dot"></b> GAME DOWNLOADS • DEVELOPER HUB</div>
-    <h1>Your games.<br><span>One download hub.</span></h1>
-    <p>Discover games, download files, explore updates and keep your gaming resources in one clean IlyrX dashboard.</p>
-    <div class="hero-actions"><a class="primary big" href="#games">Browse Games →</a><button class="secondary big" id="heroLogin">Create Account</button></div>
-    <div class="trust"><span>✓ Fast downloads</span><span>✓ Organized library</span><span>✓ Verified resources</span><span>✓ Community support</span></div>
-  </div>
-  <div class="hero-console">
-    <div class="console-head"><span><i></i><i></i><i></i></span><b>ilyrx://network</b><span class="green">● LIVE</span></div>
-    <div class="console-body">
-      <div class="console-title">DOWNLOAD HUB</div>
-      <div class="network-ok">✓ DOWNLOADS ONLINE</div>
-      <div class="metrics"><div><small>GAMES</small><strong>32%</strong></div><div><small>FILES</small><strong>1 Gbps</strong></div><div><small>UPDATES</small><strong>14 ms</strong></div><div><small>LIBRARY</small><strong>99.9%</strong></div></div>
-      <div class="bars"><span style="width:32%"></span><span style="width:58%"></span><span style="width:72%"></span></div>
-      <div class="console-line">$ ilyrx status --live</div><div class="console-line muted">games: 8 • categories: 4 • downloads: ready</div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">ILYRX COMMUNITY HUB</div>
+      <h1>Gaming content.<br><span>All in one place.</span></h1>
+      <p>Discover games, mods, files, collections and developer resources from one clean community hub.</p>
+      <div class="hero-buttons"><a class="primary-btn" href="#games">Browse games</a><a class="ghost-btn" href="#mods">Explore mods</a></div>
     </div>
+    <div class="hero-panel"><div class="hero-glow"></div><div class="hero-mark">ILYRX</div><div class="hero-panel-bottom"><span>COMMUNITY</span><b>Games · Mods · Downloads</b></div></div>
   </div>
 </section>
 
-<section class="stats"><div><strong>99.9%</strong><span>Target uptime</span></div><div><strong>NVMe</strong><span>Fast storage</span></div><div><strong>24/7</strong><span>Community support</span></div><div><strong>LIVE</strong><span>Monitoring ready</span></div></section>
-
-<section class="section" id="status">
-  <div class="section-title"><span class="eyebrow">01 / FILES</span><h2>Built for gamers</h2><p>A clean place to discover, download and organize your favorite games and resources.</p></div>
-  <div class="feature-grid" id="features">
-    <article><div class="fi">🛡</div><h3>Fast Downloads</h3><p>Organized download pages with room for mirrors, versions and file information.</p></article>
-    <article><div class="fi">▣</div><h3>Game Library</h3><p>Browse games by category and open dedicated download pages.</p></article>
-    <article><div class="fi">↥</div><h3>Game Files</h3><p>Keep installers, patches, mods, maps and useful community files together.</p></article>
-    <article><div class="fi">◉</div><h3>Version Tracking</h3><p>Show version, release date, file size and update information for every download.</p></article>
-  </div>
-</section>
+<section class="stats"><div><b>8</b><span>Games</span></div><div><b>24+</b><span>Resources</span></div><div><b>100%</b><span>Community driven</span></div><div><b>FREE</b><span>To browse</span></div></section>
 
 <section class="section" id="games">
-  <div class="section-title row"><div><span class="eyebrow">02 / GAME SERVERS</span><h2>Choose your game</h2><p>Game cards are ready for real download links, versions and game resources.</p></div><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="fps">FPS</button><button class="filter" data-filter="survival">Survival</button><button class="filter" data-filter="sandbox">Sandbox</button></div></div>
+  <div class="section-head"><div><label>EXPLORE</label><h2>Popular games</h2></div><a href="#all-games">View all →</a></div>
   <div class="game-grid">
-    <article class="game-card" data-cat="fps"><div class="game-art cs">CS</div><div class="game-content"><span>FPS</span><h3>Counter-Strike 1.6</h3><p>Classic FPS • installers, patches and community files.</p><div class="game-bottom"><b>PC • 32-bit</b><button class="small primary" data-game="Counter-Strike 1.6">Download</button></div></div></article>
-    <article class="game-card" data-cat="fps"><div class="game-art cs2">CS2</div><div class="game-content"><span>FPS</span><h3>Counter-Strike 2</h3><p>Competitive FPS • latest game files and useful resources.</p><div class="game-bottom"><b>PC • 64-bit</b><button class="small primary" data-game="Counter-Strike 2">Download</button></div></div></article>
-    <article class="game-card" data-cat="survival"><div class="game-art rust">RUST</div><div class="game-content"><span>Survival</span><h3>Rust</h3><p>Survival • game resources, updates and community files.</p><div class="game-bottom"><b>PC • Latest</b><button class="small primary" data-game="Rust">Download</button></div></div></article>
-    <article class="game-card" data-cat="sandbox"><div class="game-art mc">MC</div><div class="game-content"><span>Sandbox</span><h3>Minecraft</h3><p>Sandbox • Java/Bedrock resources, launchers and packs.</p><div class="game-bottom"><b>PC • Java / Bedrock</b><button class="small primary" data-game="Minecraft">Download</button></div></div></article>
-    <article class="game-card" data-cat="survival"><div class="game-art ark">ARK</div><div class="game-content"><span>Survival</span><h3>ARK</h3><p>Survival • maps, mods and community resources.</p><div class="game-bottom"><b>PC • Latest</b><button class="small primary" data-game="ARK">Download</button></div></div></article>
-    <article class="game-card" data-cat="sandbox"><div class="game-art samp">SA</div><div class="game-content"><span>Sandbox</span><h3>SAMP</h3><p>GTA multiplayer • clients, scripts and useful resources.</p><div class="game-bottom"><b>PC • 32-bit</b><button class="small primary" data-game="SAMP">Download</button></div></div></article>
-    <article class="game-card" data-cat="fps"><div class="game-art tf2">TF2</div><div class="game-content"><span>FPS</span><h3>Team Fortress 2</h3><p>FPS • game files, maps and community resources.</p><div class="game-bottom"><b>PC • 64-bit</b><button class="small primary" data-game="Team Fortress 2">Download</button></div></div></article>
-    <article class="game-card" data-cat="survival"><div class="game-art l4d">L4D</div><div class="game-content"><span>Co-op</span><h3>Left 4 Dead 2</h3><p>Co-op • installers, maps and community resources.</p><div class="game-bottom"><b>PC • 64-bit</b><button class="small primary" data-game="Left 4 Dead 2">Download</button></div></article>
-  </div>
+    <a class="game-card" href="games/cs2.html">
+      <div class="game-art"><span>CS2</span><small>FPS</small></div>
+      <div class="game-body"><strong>Counter-Strike 2</strong><span>Mods · Files · Updates</span></div>
+    </a>
+    <a class="game-card" href="games/cs16.html">
+      <div class="game-art"><span>CS 1.6</span><small>FPS</small></div>
+      <div class="game-body"><strong>Counter-Strike 1.6</strong><span>Mods · Files · Updates</span></div>
+    </a>
+    <a class="game-card" href="games/minecraft.html">
+      <div class="game-art"><span>MC</span><small>Sandbox</small></div>
+      <div class="game-body"><strong>Minecraft</strong><span>Mods · Files · Updates</span></div>
+    </a>
+    <a class="game-card" href="games/rust.html">
+      <div class="game-art"><span>RUST</span><small>Survival</small></div>
+      <div class="game-body"><strong>Rust</strong><span>Mods · Files · Updates</span></div>
+    </a>
+    <a class="game-card" href="games/ark.html">
+      <div class="game-art"><span>ARK</span><small>Survival</small></div>
+      <div class="game-body"><strong>ARK: Survival Evolved</strong><span>Mods · Files · Updates</span></div>
+    </a>
+    <a class="game-card" href="games/samp.html">
+      <div class="game-art"><span>SAMP</span><small>Multiplayer</small></div>
+      <div class="game-body"><strong>SAMP</strong><span>Mods · Files · Updates</span></div>
+    </a>
+    <a class="game-card" href="games/tf2.html">
+      <div class="game-art"><span>TF2</span><small>FPS</small></div>
+      <div class="game-body"><strong>Team Fortress 2</strong><span>Mods · Files · Updates</span></div>
+    </a>
+    <a class="game-card" href="games/l4d2.html">
+      <div class="game-art"><span>L4D2</span><small>Co-op</small></div>
+      <div class="game-body"><strong>Left 4 Dead 2</strong><span>Mods · Files · Updates</span></div>
+    </a></div>
 </section>
 
-<section class="section split" id="developer">
-  <div class="developer-panel">
-    <span class="eyebrow">03 / DEVELOPER</span><h2>More than hosting.</h2><p>Give IlyrX a developer side too: utilities, documentation, snippets, deployment notes, downloads and project resources.</p>
-    <div class="dev-list"><span>⌘ JSON / API tools</span><span>⌁ Web utilities</span><span>&lt;/&gt; Code resources</span><span>◈ Deployment guides</span></div>
-    <button class="secondary" data-demo="Developer Hub">Open Developer Hub</button>
-  </div>
-  <div class="code-panel"><div class="code-top">ilyrx.config <span>● READY</span></div><pre><code><b>project</b> = <em>"ilyrx"</em>
-<b>environment</b> = <em>"production"</em>
-<b>deployment</b> = <em>"github-pages"</em>
-<b>database</b> = <em>"supabase"</em>
-<b>realtime</b> = <em>true</em>
-<b>support</b> = <em>"live"</em></code></pre></div>
+<section class="section split" id="mods">
+  <div class="feature-card"><div class="feature-art big">MODS</div><div><label>MOD LIBRARY</label><h2>Customize your games</h2><p>Find maps, skins, scripts, tools and community-made files organized by game.</p><a class="primary-btn small" href="#all-mods">Browse mods</a></div></div>
+  <div class="feature-card"><div class="feature-art alt">TOOLS</div><div><label>DEVELOPER HUB</label><h2>Build & share</h2><p>Useful developer tools, guides and resources for creators and server communities.</p><a class="ghost-btn small" href="#developers">Open developer hub</a></div></div>
 </section>
 
 <section class="section" id="downloads">
- <div class="section-title"><span class="eyebrow">04 / RESOURCES</span><h2>Downloads & tools</h2><p>Organize your utilities, installers, documentation and community files.</p></div>
- <div class="resource-grid"><article><b>ZIP</b><h3>Starter Projects</h3><p>Clean templates for your next project.</p><button class="small secondary" data-demo="Starter Projects">Open</button></article><article><b>DOC</b><h3>Developer Cheatsheets</h3><p>Quick references for daily workflows.</p><button class="small secondary" data-demo="Developer Cheatsheets">Open</button></article><article><b>API</b><h3>Tools Library</h3><p>Utilities for JSON, URLs, hashes and text.</p><button class="small secondary" data-demo="Tools Library">Open</button></article><article><b>GUIDE</b><h3>Download Docs</h3><p>Domains, DNS, SSL and deployment notes.</p><button class="small secondary" data-demo="Download Docs">Open</button></article></div>
-</section>
-
-<section class="section dashboard" id="dashboard">
-  <div class="section-title row"><div><span class="eyebrow">MY LIBRARY</span><h2>Your game library & downloads</h2><p>Download downloads, saved games, requests, notifications and your profile from one dashboard.</p></div><button class="primary" id="dashboardLogin">Login / Register</button></div>
-  <div class="dash-grid">
-    <aside class="dash-side">
-      <div class="dash-user"><span class="dash-avatar" id="dashAvatar">I</span><div><b id="dashUser">Guest</b><small id="dashEmail">Not signed in</small></div></div>
-      <button class="dash-nav active" data-tab="overview">▦ Overview</button>
-      <button class="dash-nav" data-tab="servers">◈ My Downloads</button>
-      <button class="dash-nav" data-tab="orders">◷ Download History</button>
-      <button class="dash-nav" data-tab="tickets">◫ Tickets</button>
-      <button class="dash-nav" data-tab="downloads">⇩ Downloads</button>
-      <button class="dash-nav" data-tab="notifications">♢ Notifications</button>
-      <button class="dash-nav" data-tab="profile">◎ Profile</button>
-    </aside>
-    <div class="dash-content">
-      <div class="dash-tab active" id="tab-overview">
-        <div class="dash-welcome"><div><span class="eyebrow">WELCOME BACK</span><h3 id="welcomeName">Guest</h3><p>Everything important at a glance.</p></div><span class="online-badge"><b class="dot"></b> Network online</span></div>
-        <div class="dash-cards">
-          <article><small>SAVED GAMES</small><strong id="serverCount">0</strong><span>Ready to manage</span></article>
-          <article><small>DOWNLOADS</small><strong id="orderCount">0</strong><span>Recent purchases</span></article>
-          <article><small>REQUESTS</small><strong id="ticketCount">0</strong><span>Support requests</span></article>
-          <article><small>NOTIFICATIONS</small><strong id="notifCount">0</strong><span>Unread updates</span></article>
-        </div>
-        <div class="dash-panels"><article><div class="panel-head"><h4>Quick actions</h4></div><div class="quick"><button data-tabgo="servers">+ Browse games</button><button data-tabgo="tickets">Request a game</button><button data-tabgo="downloads">Browse downloads</button></div></article><article><div class="panel-head"><h4>System</h4></div><p class="system-row"><b>Network</b><span class="good">Operational</span></p><p class="system-row"><b>Control panel</b><span class="good">Operational</span></p><p class="system-row"><b>Realtime chat</b><span class="good">Operational</span></p></article></div>
-      </div>
-      <div class="dash-tab" id="tab-servers"><div class="tab-head"><h3>My Downloads</h3><button class="primary" data-game="New game">Add Game</button></div><div class="server-list"><article class="server-row"><div class="server-icon">CS</div><div><b>Counter-Strike 2</b><small>Latest • Windows • PC</small></div><span class="server-status"><b class="dot"></b> Online</span><button class="small secondary" data-demo="Server console">Download</button></article><div class="placeholder">Your saved games and download history can appear here after the database is connected.</div></div></div>
-      <div class="dash-tab" id="tab-orders"><div class="tab-head"><h3>Download History</h3></div><div class="order-list"><div class="order-row"><span>#ILX-DEMO</span><b>Game download</b><span>Pending backend</span><button class="small secondary">Details</button></div><div class="placeholder">Replace these demo entries with your real game downloads and direct file links.</div></div></div>
-      <div class="dash-tab" id="tab-tickets"><div class="tab-head"><h3>Game Requests</h3><button class="primary" id="newTicket">Request Game</button></div><div class="ticket-list"><div class="ticket-row"><span class="ticket-open">OPEN</span><b>Welcome to IlyrX Downloads</b><small>Request system ready</small></div><div class="placeholder">Real tickets can be stored in Supabase with an RLS policy for each authenticated user.</div></div></div>
-      <div class="dash-tab" id="tab-downloads"><div class="tab-head"><h3>Downloads</h3></div><div class="download-list"><div><b>Developer Starter Kit</b><span>ZIP • v1.0</span><button class="small secondary" data-demo="Developer Starter Kit">Download</button></div><div><b>Server Config Pack</b><span>ZIP • v1.0</span><button class="small secondary" data-demo="Server Config Pack">Download</button></div><div><b>IlyrX Documentation</b><span>PDF • v1.0</span><button class="small secondary" data-demo="Documentation">Open</button></div></div></div>
-      <div class="dash-tab" id="tab-notifications"><div class="tab-head"><h3>Notifications</h3><button class="secondary" id="notifyPermission">Enable browser notifications</button></div><div class="notice-list"><div><b>Welcome to IlyrX</b><span>Your client area is ready.</span><time>Now</time></div><div><b>Network status</b><span>All public services are operational.</span><time>Today</time></div></div></div>
-      <div class="dash-tab" id="tab-profile"><div class="tab-head"><h3>Profile</h3></div><div class="profile-box"><span class="dash-avatar big" id="profileDashAvatar">I</span><label>Username<input id="profileUsername" disabled></label><label>Email<input id="profileEmailInput" disabled></label><button class="danger" id="profileLogout">Sign out</button></div></div>
-    </div>
+  <div class="section-head"><div><label>DISCOVER</label><h2>Latest downloads</h2></div><a href="#all-downloads">View all →</a></div>
+  <div class="download-list">
+    <div><span class="file-icon">ZIP</span><div><b>Community Starter Pack</b><small>Resources · Updated recently</small></div><a href="#mods">Explore</a></div>
+    <div><span class="file-icon">MOD</span><div><b>Game Enhancement Pack</b><small>Mods · Community release</small></div><a href="#mods">Explore</a></div>
+    <div><span class="file-icon">TOOL</span><div><b>Developer Toolkit</b><small>Developer · Utilities</small></div><a href="#developers">Explore</a></div>
   </div>
 </section>
 
-<section class="section account-section" id="support">
-  <div><span class="eyebrow">05 / ACCOUNT & COMMUNITY</span><h2>Your IlyrX dashboard</h2><p>Register, manage your profile, view resources and use the realtime community support room.</p><div class="dashboard-pills"><span>🔐 Secure Auth</span><span>🗄 Online Database</span><span>💬 Realtime Chat</span><span>🔔 Notifications</span></div></div>
-  <button class="primary big" id="supportAccount">Open My Library →</button>
+<section class="section dark-block" id="collections">
+  <div><label>COLLECTIONS</label><h2>Curated gaming packs</h2><p>Group your favorite mods and resources into one collection for easy access.</p></div>
+  <a class="primary-btn" href="#create">Create collection</a>
 </section>
 
-<section class="section" id="community">
- <div class="section-title row"><div><span class="eyebrow">06 / COMMUNITY</span><h2>Realtime support chat</h2><p id="chatStatus">Sign in to join.</p></div><span class="live-pill"><b class="dot"></b> LIVE</span></div>
- <div class="chat-shell"><aside><div class="room active"># <b>general</b></div><div class="room"># <b>support</b></div><div class="room"># <b>projects</b></div><div class="room-note">Supabase Realtime<br>secure authenticated room</div></aside><div class="chat-main"><div id="messages" class="messages"><div class="empty">Sign in to load realtime chat.</div></div><form id="chatForm"><input id="chatInput" placeholder="Write a message…" maxlength="500" disabled><button class="primary" disabled>Send</button></form></div></div>
+<section class="section community" id="community">
+  <label>COMMUNITY</label><h2>Your library, your profile</h2>
+  <p>Sign up to save games, favorite resources and keep your download history in your personal IlyrX library.</p>
+  <button class="primary-btn" id="heroAccount">Create free account</button>
 </section>
 </main>
 
-<footer><div><b>Ilyr<span>X</span> HUB</b><p>Game downloads • Developer tools • Community</p></div><div><a href="games/l4d2.html"games/tf2.html"games/samp.html"games/ark.html"games/minecraft.html"games/rust.html"games/cs2.html"games/cs16.html"#games">View Game</a><a href="#developer">Developer</a><a href="#downloads">Downloads</a><a href="#support">Support</a></div><span>© 2026 IlyrX</span></footer>
+<footer><div class="footer-inner"><b>Ilyr<span>X</span></b><span>Games · Mods · Downloads · Developer Hub</span><span>© 2026 IlyrX</span></div></footer>
 
-<div class="modal-bg hidden" id="authModal"><div class="modal"><button class="close" id="closeAuth">×</button><div class="modal-logo">IX</div><h2 id="authTitle">Welcome back</h2><p id="authSub">Sign in to your IlyrX account.</p><form id="authForm"><label id="nameWrap" class="hidden">Username<input id="authName" maxlength="40"></label><label>Email<input id="authEmail" type="email" required></label><label>Password<input id="authPassword" type="password" minlength="6" required></label><button class="primary full" id="authSubmit">Sign in</button></form><button class="link-btn" id="forgotBtn">Forgot password?</button><div id="authMessage"></div><div class="switch"> <span id="switchText">Don't have an account?</span> <button class="link-btn" id="switchAuth">Create one</button></div></div></div>
-<div class="modal-bg hidden" id="profileModal"><div class="modal center"><button class="close" id="closeProfile">×</button><div class="avatar" id="profileAvatar">I</div><h2 id="profileName">Account</h2><p id="profileEmail"></p><button class="danger" id="logoutBtn">Sign out</button></div></div>
-<div class="toast" id="toast"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="app.js"></script>
-</body>
-</html>
+</body></html>
